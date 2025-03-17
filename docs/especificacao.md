@@ -31,10 +31,28 @@ O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcela
 
 | Código | Requisito Funcional (Funcionalidade) | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
-| RF1 | Gerenciar Curso de Aperfeiçoamento |	Processamento de Inclusão, Alteração, Exclusão e Consulta de Cursos de Aperfeiçoamento |
-| RF2 |	Gerenciar Professor	| Processamento de Inclusão, Alteração, Exclusão e Consulta de professores |
-| RF3	| Gerenciar Matrícula |	Processamento de Inclusão, Alteração, Exclusão e Consulta de Matrículas de alunos em Cursos de Aperfeiçoamento |
-| ... |	...	| ... |
+| RF1 | Apresentar ferramentas |	O software deve conter uma página inicial para apresentar o propósito do projeto e informar sobre o funcionamento do software. |
+| RF2 |	Dispor conteúdo didático	|O software deve conter uma página de glossário onde o usuário poderá encontrar as definições de palavras mais usadas em um contexto digital.  |
+| RF3	| Dispor conteúdo informativo |O software deve conter a página “Real ou falso?" para que o usuário possa encontrar as principais agências que checam a veracidade das notícias do Brasil.  |
+| RF4 |	Dispor conteúdo informativo	| O software deve conter a página “Leis Digitais” com informações de leis referentes a golpes virtuais.  |
+| RF5 |Dispor conteúdo didático	|O software deve conter a página “Como identificar um golpe”, na qual o usuário aprenderá a identificar os tipos de golpes digitais e como se prevenir de perigos online.  |
+| RF6|	Dispor conteúdo de ajuda	| O software deve conter a página “Ajuda” com acesso a links para redirecionamento a sites para ajudar a identificar tipos de golpes e notícias falsas.  |
+| RF7 |	Gerenciar comentários	|Inclusão e exclusão de comentários na página “Depoimentos” de forma anônima ou identificada.  |
+| RF8 |	Visualisar comentários	|Visualização de comentários de outros usuários. |
+| RF9 |	Responder comentários	| Interação com comentários de outros usuários (curtida ou respostas ao comentário) |
+| RF10 |		| Processamento de inclusão, alteração e exclusão de comentários |
+| RF11 |	Gerenciar Jogos	|Processamento dos jogos interativos “Forca”, “Palavras Cruzadas” e “Passeio Tecnológico”, com registro de pontuação para usuários logados |
+| RF12 |	Dispor ferramenta	|Ferramenta de pesquisa para listagem de interesses pré-definidos com base no público-alvo.  |
+| RF13 |	Gerenciar comentários	| Envio de comentários, a partir da página “Ajuda”, para envio de demandas privadas pelo usuário, com a necessária inserção de um e-mail, telefone e endereço para contato. A solicitação deverá ser enviada a uma conta de e-mail própria do software para que um voluntário do projeto entre em contato e preste o apoio necessário|
+| RF14 |	Dispor ferramenta	| Controle do zoom da visualização do software a partir de uma ferramenta de lupa.|
+| RF15 |	Dipor conteúdo didático	|O software deve conter a página "introdução tecnológica", a qual irá conter informações breves sobre as tecnologias até os tempos de hoje e dicas sobre o uso do computador.|
+| RF16 |	Gerenciar usuário	|Processamento de Inclusão, Alteração e Exclusão de perfil pelo usuário, com o fornecimento de informações básicas obrigatórias de identificação (nome, e-mail, telefone) e informações opcionais (data de nascimento, cidade, estado, foto de perfil, redes sociais). |
+| RF17 |	Permitir download	| O software deve permitir o salvamento de conteúdo para leitura posterior.  |
+| RF18 |	Permitir impressão	| O software deve possuir botão de impressão para permitir que o usuário imprima as páginas em PDF ou em impressora local.|
+
+
+
+
 
 ### 3.3.2 Requisitos Não Funcionais
 
