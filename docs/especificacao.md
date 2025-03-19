@@ -31,24 +31,23 @@ O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcela
 
 | Código | Requisito Funcional (Funcionalidade) | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
-| RF1 | Apresentar ferramentas |	O software deve conter uma página inicial para apresentar o propósito do projeto e informar sobre o funcionamento do software. |
-| RF2 |	Dispor conteúdo didático	|O software deve conter uma página de glossário onde o usuário poderá encontrar as definições de palavras mais usadas em um contexto digital.  |
-| RF3	| Dispor conteúdo informativo |O software deve conter a página “Real ou falso?" para que o usuário possa encontrar as principais agências que checam a veracidade das notícias do Brasil.  |
-| RF4 |	Dispor conteúdo informativo	| O software deve conter a página “Leis Digitais” com informações de leis referentes a golpes virtuais.  |
-| RF5 |Dispor conteúdo didático	|O software deve conter a página “Como identificar um golpe”, na qual o usuário aprenderá a identificar os tipos de golpes digitais e como se prevenir de perigos online.  |
-| RF6|	Dispor conteúdo de ajuda	| O software deve conter a página “Ajuda” com acesso a links para redirecionamento a sites para ajudar a identificar tipos de golpes e notícias falsas.  |
+| RF1 | Acessar Pagina inicial |	O software deve conter uma página inicial para apresentar o propósito do projeto e informar sobre o funcionamento do software. |
+| RF2 |	Acessar Glossário	|O software deve conter uma página de glossário onde o usuário poderá encontrar as definições de palavras mais usadas em um contexto digital.  |
+| RF3	| Acessar Real ou Falso  |O software deve conter a página “Real ou falso?" para que o usuário possa encontrar as principais agências que checam a veracidade das notícias do Brasil.  |
+| RF4 |	Acessar leis Digitais	| O software deve conter a página “Leis Digitais” com informações de leis referentes a golpes virtuais.  |
+| RF5 |Acessar Como identificar um Golpe	|O software deve conter a página “Como identificar um golpe”, na qual o usuário aprenderá a identificar os tipos de golpes digitais e como se prevenir de perigos online.  |
+| RF6|	Orientações e Ajuda	| O software deve conter a página “Ajuda” com acesso a links para redirecionamento a sites para ajudar a identificar tipos de golpes e notícias falsas.  |
 | RF7 |	Gerenciar comentários	|Inclusão e exclusão de comentários na página “Depoimentos” de forma anônima ou identificada.  |
 | RF8 |	Visualisar comentários	|Visualização de comentários de outros usuários. |
 | RF9 |	Responder comentários	| Interação com comentários de outros usuários (curtida ou respostas ao comentário) |
-| RF10 |		| Processamento de inclusão, alteração e exclusão de comentários |
-| RF11 |	Gerenciar Jogos	|Processamento dos jogos interativos “Forca”, “Palavras Cruzadas” e “Passeio Tecnológico”, com registro de pontuação para usuários logados |
-| RF12 |	Dispor ferramenta	|Ferramenta de pesquisa para listagem de interesses pré-definidos com base no público-alvo.  |
-| RF13 |	Gerenciar comentários	| Envio de comentários, a partir da página “Ajuda”, para envio de demandas privadas pelo usuário, com a necessária inserção de um e-mail, telefone e endereço para contato. A solicitação deverá ser enviada a uma conta de e-mail própria do software para que um voluntário do projeto entre em contato e preste o apoio necessário|
-| RF14 |	Dispor ferramenta	| Controle do zoom da visualização do software a partir de uma ferramenta de lupa.|
-| RF15 |	Dipor conteúdo didático	|O software deve conter a página "introdução tecnológica", a qual irá conter informações breves sobre as tecnologias até os tempos de hoje e dicas sobre o uso do computador.|
-| RF16 |	Gerenciar usuário	|Processamento de Inclusão, Alteração e Exclusão de perfil pelo usuário, com o fornecimento de informações básicas obrigatórias de identificação (nome, e-mail, telefone) e informações opcionais (data de nascimento, cidade, estado, foto de perfil, redes sociais). |
-| RF17 |	Permitir download	| O software deve permitir o salvamento de conteúdo para leitura posterior.  |
-| RF18 |	Permitir impressão	| O software deve possuir botão de impressão para permitir que o usuário imprima as páginas em PDF ou em impressora local.|
+| RF10 |	Acessar Jogos interativos	|Processamento dos jogos interativos “Forca”, “Palavras Cruzadas” e “Passeio Tecnológico”, com registro de pontuação para usuários logados |
+| RF11 |	Pesquisar conteúdo	|Ferramenta de pesquisa para listagem de interesses pré-definidos com base no público-alvo.  |
+| RF12 |	Enviar dúvida ou pergunta	| Envio de comentários, a partir da página “Ajuda”, para envio de demandas privadas pelo usuário, com a necessária inserção de um e-mail, telefone e endereço para contato. A solicitação deverá ser enviada a uma conta de e-mail própria do software para que um voluntário do projeto entre em contato e preste o apoio necessário|
+| RF13 |	Controlar zoom da visualização| Controle do zoom da visualização do software a partir de uma ferramenta de lupa.|
+| RF14 |	Acessar Introdução tecnológica	|O software deve conter a página "introdução tecnológica", a qual irá conter informações breves sobre as tecnologias até os tempos de hoje e dicas sobre o uso do computador.|
+| RF15 |	Gerenciar usuário	|Processamento de Inclusão, Alteração e Exclusão de perfil pelo usuário, com o fornecimento de informações básicas obrigatórias de identificação (nome, e-mail, telefone) e informações opcionais (data de nascimento, cidade, estado, foto de perfil, redes sociais). |
+| RF16 |	Fazer download do conteúdo	| O software deve permitir o salvamento de conteúdo para leitura posterior.  |
+| RF17 | Imprimir conteúdo| O software deve possuir botão de impressão para permitir que o usuário imprima as páginas em PDF ou em impressora local.|
 
 
 
@@ -58,10 +57,13 @@ O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcela
 
 | Código | Requisito Não Funcional (Restrição) |
 |--------------------|------------------------------------|
-| RNF1 | O ambiente operacional a ser utilizado é o Windows XP. |
-| RNF2 | O sistema deverá executar em um computador configurado com uma impressora de tecnologia laser ou de jato de tinta, a ser usada para impressão dos relatórios. |
-| RNF3 |	Segurança	O produto deve restringir o acesso por meio de senhas individuais para o usuário. |
-| ... |	... |	... |
+| RNF1 | O software deve processar requisições do usuário em no máximo 3s.  |
+| RNF2 | O software deve ser responsivo e adaptável a qualquer interface.	  |
+| RNF3 |O software deve ser capaz de ser executado nas versões recentes dos navegadores mais utilizados: Chrome, Firefox, Edge e Safari.  |
+| RNF4 |	Os dados pessoais dos usuários devem ser criptografados antes de serem armazenados. |	
+| RNF5 |	O software deve apresentar um feedback para ações do usuário como confirmações de envio e mensagens de erro. |	
+| RNF6 |	O software deve possuir um layout de fácil entendimento |	
+
 
 ### 3.3.3 Usuários 
 
