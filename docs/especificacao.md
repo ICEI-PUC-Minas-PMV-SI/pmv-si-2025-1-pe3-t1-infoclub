@@ -31,25 +31,19 @@ O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcela
 
 | Código | Requisito Funcional (Funcionalidade) | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
-| RF1 | Acessar Pagina inicial |	O software deve conter uma página inicial para apresentar o propósito do projeto e informar sobre o funcionamento do software. |
-| RF2 |	Acessar Glossário	|O software deve conter uma página de glossário onde o usuário poderá encontrar as definições de palavras mais usadas em um contexto digital.  |
-| RF3	| Acessar Real ou Falso  |O software deve conter a página “Real ou falso?" para que o usuário possa encontrar as principais agências que checam a veracidade das notícias do Brasil.  |
-| RF4 |	Acessar leis Digitais	| O software deve conter a página “Leis Digitais” com informações de leis referentes a golpes virtuais.  |
-| RF5 |Acessar Como identificar um Golpe	|O software deve conter a página “Como identificar um golpe”, na qual o usuário aprenderá a identificar os tipos de golpes digitais e como se prevenir de perigos online.  |
-| RF6|	Orientações e Ajuda	| O software deve conter a página “Ajuda” com acesso a links para redirecionamento a sites para ajudar a identificar tipos de golpes e notícias falsas.  |
-| RF7 |	Gerenciar comentários	|Inclusão e exclusão de comentários na página “Depoimentos” de forma anônima ou identificada.  |
-| RF8 |	Visualisar comentários	|Visualização de comentários de outros usuários. |
-| RF9 |	Responder comentários	| Interação com comentários de outros usuários (curtida ou respostas ao comentário) |
-| RF10 |	Acessar Jogos interativos	|Processamento dos jogos interativos “Forca”, “Palavras Cruzadas” e “Passeio Tecnológico”, com registro de pontuação para usuários logados |
-| RF11 |	Pesquisar conteúdo	|Ferramenta de pesquisa para listagem de interesses pré-definidos com base no público-alvo.  |
-| RF12 |	Enviar dúvida ou pergunta	| Envio de comentários, a partir da página “Ajuda”, para envio de demandas privadas pelo usuário, com a necessária inserção de um e-mail, telefone e endereço para contato. A solicitação deverá ser enviada a uma conta de e-mail própria do software para que um voluntário do projeto entre em contato e preste o apoio necessário|
-| RF13 |	Controlar zoom da visualização| Controle do zoom da visualização do software a partir de uma ferramenta de lupa.|
-| RF14 |	Acessar Introdução tecnológica	|O software deve conter a página "introdução tecnológica", a qual irá conter informações breves sobre as tecnologias até os tempos de hoje e dicas sobre o uso do computador.|
-| RF15 |	Gerenciar usuário	|Processamento de Inclusão, Alteração e Exclusão de perfil pelo usuário, com o fornecimento de informações básicas obrigatórias de identificação (nome, e-mail, telefone) e informações opcionais (data de nascimento, cidade, estado, foto de perfil, redes sociais). |
-| RF16 |	Fazer download do conteúdo	| O software deve permitir o salvamento de conteúdo para leitura posterior.  |
-| RF17 | Imprimir conteúdo| O software deve possuir botão de impressão para permitir que o usuário imprima as páginas em PDF ou em impressora local.|
 
 
+| RF1 | Criar usuário | A aplicação deve permitir que os usuários criem usuário e senha para acessar o sistema. Podendo editar ou excluir as informações de acesso. A criação do usuário é opcional |
+| RF2 |	Gerenciar usuário	|Processamento de Inclusão, Alteração e Exclusão de perfil, com o fornecimento de informações básicas obrigatórias de identificação (nome, e-mail, telefone) e informações opcionais (data de nascimento, cidade, estado, foto de perfil, redes sociais). |
+| RF3 | Gerenciar conteudo |  Inclusão, exclução e edição do conteúdo do software |
+| RF4 |	Gerenciar comentários	|Incluir, visualizar, responder, excluir e editar  comentários.  |
+| RF5 |	Pesquisar conteúdo	|Ferramenta de pesquisa para listagem de interesses pré-definidos com base no público-alvo.  |
+| RF6 |	Controlar zoom da visualização| Controle do zoom da visualização do software a partir de uma ferramenta de lupa.|
+| RF7 |	Fazer download do conteúdo	| O software deve permitir o salvamento de conteúdo para leitura posterior.  |
+| RF8 | Imprimir conteúdo| O software deve possuir botão de impressão para permitir que o usuário imprima as páginas em PDF ou em impressora local.|
+| RF9 |Enviar feedback ou Dúvida.|A aplicação deve permitir que os usuários enviem feedback ou dúvidas aos administradores e visualizem os mesmos em seus perfis.|
+| RF10 | A aplicação deve permitir que os usuários façam login no sistema.|
+| RFF11 | A aplicação deve permitir que os usuários saiam do sistema.|
 
 
 
@@ -70,7 +64,7 @@ O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcela
 | Ator | Descrição |
 |--------------------|------------------------------------|
 | Administrador |	Usuário Administrador do sistema responsável por gerenciar o conteúdo apresentado. Possui acesso geral ao sistema. |
-| Usuário |	Usuário responsável por interagir com o conteúdo. |
+| Usuário |	Usuário pode gerenciar comentários, enviar feedbacks e dúvidas, criar um login e gerenciar o cadastro. |
 
 
 ## 3.4 Modelagem do Sistema
