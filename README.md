@@ -7,19 +7,20 @@
 `SEMESTRE: 3º`
 
 Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
-
+Uma ferramenta educativa para capacitar idosos e grupos vulneráveis a navegar com segurança na internet, identificar desinformação e proteger-se contra golpes online. Busca promover uma sociedade mais informada e engajada, enfrentando o analfabetismo digital e os desafios da era digital.
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
+* Amanda Lage Perez
+* Daniel Vitor Machado Moura Filho
+* Ester Alves Targino
+* Jennifer Suelen de Freitas Souza Silva
+* João Eduardo da Silva Rocha
+* Luís Henrique Oliveira Cavalcante Duarte
+
 
 ## Orientador
 
-* Nome completo do professor 
+* Fábio Martins de Oliveira
 
 # Planejamento
 
