@@ -47,9 +47,9 @@ O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcela
 | RF8 | Imprimir conteúdo| O software deve possuir botão de impressão para permitir que o usuário imprima as páginas em PDF ou em impressora local.|
 | RF9 |Enviar feedback ou Dúvida.|A aplicação deve permitir que os usuários enviem feedback ou dúvidas aos administradores e os visualizem em seus perfis.|
 | RF10 | Entrar no sistema |A aplicação deve permitir que os usuários façam login.|
-| RFF11 | Sair do sitema |A aplicação deve permitir que os usuários façam logout.|
-| RFF12 | Moderar comentários |A aplicação deve permitir que os administradores incluam, excluam e editem comentários dos usuários.|
-| RFF13 | Moderar usuários |A aplicação deve permitir que os administradores excluam e suspendam por tempo determinado os perfis de usuários.|
+| RF11 | Sair do sitema |A aplicação deve permitir que os usuários façam logout.|
+| RF12 | Moderar comentários |A aplicação deve permitir que os administradores incluam, excluam e editem comentários dos usuários.|
+| RF13 | Moderar usuários |A aplicação deve permitir que os administradores excluam e suspendam por tempo determinado os perfis de usuários.|
 
 
 
