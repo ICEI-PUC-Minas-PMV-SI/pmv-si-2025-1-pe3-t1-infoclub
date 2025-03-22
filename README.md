@@ -5,6 +5,8 @@
 `DISCIPLINA: Projeto - Design de Centrado no Usuário`
 
 `SEMESTRE: 3º`
+
+
 Uma ferramenta educativa para capacitar idosos e grupos vulneráveis a navegar com segurança na internet, identificar desinformação e proteger-se contra golpes online. Busca promover uma sociedade mais informada e engajada, enfrentando o analfabetismo digital e os desafios da era digital.
 ## Integrantes
 
