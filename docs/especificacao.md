@@ -69,9 +69,9 @@ O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcela
 
 | Ator | Descrição |
 |--------------------|------------------------------------|
-| Coordenador |	Usuário gerente do sistema responsável pelo cadastro e manutenção de cursos de aperfeiçoamento. Possui acesso geral ao sistema. |
-| Secretaria |	Usuário responsável por registros de alunos, professores, turmas e gerência de matrículas. |
-| ... |	... |	... |
+| Administrador |	Usuário Administrador do sistema responsável por gerenciar o conteúdo apresentado. Possui acesso geral ao sistema. |
+| Usuário |	Usuário responsável por interagir com o conteúdo. |
+
 
 ## 3.4 Modelagem do Sistema
 
