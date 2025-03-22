@@ -37,17 +37,19 @@ O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcela
 
 | Código | Requisito Funcional (Funcionalidade) | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
-| RF1 | Criar usuário | A aplicação deve permitir que os usuários criem usuário e senha para acessar o sistema. Podendo editar ou excluir as informações de acesso. A criação do usuário é opcional |
-| RF2 |	Gerenciar usuário	|Processamento de Inclusão, Alteração e Exclusão de perfil, com o fornecimento de informações básicas obrigatórias de identificação (nome, e-mail, telefone) e informações opcionais (data de nascimento, cidade, estado, foto de perfil, redes sociais). |
-| RF3 | Gerenciar conteudo |  Inclusão, exclução e edição do conteúdo do software |
+| RF1 | Criar usuário | A aplicação deve permitir que os usuários criem usuário e senha para acessar o sistema, podendo editar ou excluir as informações de acesso. A criação do usuário é opcional |
+| RF2 |	Gerenciar usuário	|Processamento de Inclusão, Alteração e Exclusão de perfil de usuário, com o fornecimento de informações básicas obrigatórias de identificação (nome, e-mail, telefone) e informações opcionais (data de nascimento, cidade, estado, foto de perfil, redes sociais). |
+| RF3 | Gerenciar conteúdo |  Inclusão, exclusão e edição do conteúdo do software |
 | RF4 |	Gerenciar comentários	|Incluir, visualizar, responder, excluir e editar  comentários.  |
 | RF5 |	Pesquisar conteúdo	|Ferramenta de pesquisa para listagem de interesses pré-definidos com base no público-alvo.  |
 | RF6 |	Controlar zoom da visualização| Controle do zoom da visualização do software a partir de uma ferramenta de lupa.|
-| RF7 |	Fazer download do conteúdo	| O software deve permitir o salvamento de conteúdo para leitura posterior.  |
+| RF7 |	Salvar para mais tarde	| O software deve permitir o salvamento de conteúdo para leitura posterior.  |
 | RF8 | Imprimir conteúdo| O software deve possuir botão de impressão para permitir que o usuário imprima as páginas em PDF ou em impressora local.|
-| RF9 |Enviar feedback ou Dúvida.|A aplicação deve permitir que os usuários enviem feedback ou dúvidas aos administradores e visualizem os mesmos em seus perfis.|
+| RF9 |Enviar feedback ou Dúvida.|A aplicação deve permitir que os usuários enviem feedback ou dúvidas aos administradores e os visualizem em seus perfis.|
 | RF10 | Entrar no sistema |A aplicação deve permitir que os usuários façam login.|
-| RFF11 | Sair do sitema |A aplicação deve permitir que os usuários saiam.|
+| RFF11 | Sair do sitema |A aplicação deve permitir que os usuários façam logout.|
+| RFF12 | Moderar comentários |A aplicação deve permitir que os administradores incluam, excluam e editem comentários dos usuários.|
+| RFF13 | Moderar usuários |A aplicação deve permitir que os administradores excluam e suspendam por tempo determinado os perfis de usuários.|
 
 
 
