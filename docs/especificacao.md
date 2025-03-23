@@ -252,7 +252,7 @@ Fluxo Principal:
 4.	O usuário seleciona a operação desejada: curtir comentário, denunciar comentário, responder ao comentário, inserir novo comentário ou opta por finalizar o caso de uso.
 5.	Se o usuário desejar continuar com o gerenciamento de comentários, o caso de uso retorna ao passo 2; caso contrário o caso de uso termina.
 
-**Fluxo Alternativo (1):** Curtir comentário 
+**Fluxo Alternativo (1):** Curtir comentário
 a.	O usuário visualiza um comentário preexistente de outro usuário.
 b.	O Sistema apresenta a opção “curtir comentário”. 
 c.	O usuário curte o comentário.
@@ -295,7 +295,7 @@ a.	O usuário visualiza o próprio comentário submetido.
 b.	O Sistema apresenta a opção “excluir comentário”.
 c.	O usuário seleciona a opção “excluir comentário”.
 d.	O sistema verifica se o usuário está logado. Se o usuário estiver logado, o Sistema apresenta a mensagem “Tem certeza de que deseja excluir seu comentário? (A ação não poderá ser revertida)” e os botões “Excluir” e “Não excluir”.
-e.	O usuário seleciona a opção “Excluir” ou “Não excluir”. 
+e.	O usuário seleciona a opção “Excluir” ou “Não excluir”.
 f.	Se o usuário não estiver logado, o Sistema reporta o fato com a mensagem “Usuário não logado. Faça o login para interagir”.
 
 **Pós-condições:** Um usuário curtiu, denunciou ou respondeu a um comentário de outro usuário. Um usuário inseriu novo comentário, editou ou excluiu um novo comentário que havia submetido. 
