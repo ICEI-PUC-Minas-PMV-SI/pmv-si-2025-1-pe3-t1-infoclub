@@ -400,7 +400,7 @@ d.	O sistema realiza o logout do usuário e retorna a mensagem “Você fez o Lo
 **Pós-condições: **Um usuário realizou o login no sistema. Um usuário informou que esqueceu seu usuário/senha. Um usuário recebeu uma mensagem com as informações de suas credenciais de acesso. Um usuário realizou o logout no sistema.
 
 
-### Moderar comentários e Moderar usuários (CSU12)
+|### Moderar comentários e Moderar usuários (CSU12)
 
 **Sumário:** O administrador realiza a moderação de comentários e de usuários.
 **Ator Primário: **Administradores.
@@ -432,7 +432,7 @@ h.	O sistema passa a apresentar a mensagem “usuário bloqueado” quando o usu
 i.	Se o recurso ao bloqueio do usuário foi considerado pertinente pelos administradores, o fluxo retorna ao item “a”, e o administrador poderá acessar o cadastro do usuário bloqueado, clicar no botão “desbloquear usuário”, e o sistema retornará a mensagem “Informe o motivo do desbloqueio” com o campo para preenchimento manual obrigatório pelo administrador e o botão “confirmar desbloqueio”. 
 j.	O sistema retira as informações de bloqueio do usuário e retorna a exibição das informações de cadastro do usuário nos comentários feitos por este.
 
-**Pós-condições:** Um administrador altera ou exclui o comentário de um usuário. Um administrador bloqueia um usuário. Um administrador desbloqueia um usuário.
+**Pós-condições:** Um administrador altera ou exclui o comentário de um usuário. Um administrador bloqueia um usuário. Um administrador desbloqueia um usuário.|
 
 
 ### 3.4.3 Diagrama de Classes 
