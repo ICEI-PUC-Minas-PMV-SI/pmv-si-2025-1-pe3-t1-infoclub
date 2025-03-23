@@ -240,7 +240,7 @@ Fluxo Principal:
 
 5) O usuário acessa o conteúdo desejado. <br>
 
-**Gerenciar Comentários (CSU05)**
+#### **Gerenciar Comentários (CSU05)**
 **Sumário:** O usuário realiza inclusão, exclusão e edição dos próprios comentários, bem como visualização e resposta a comentários de terceiros.
 **Ator Primário:** Usuário.
 **Ator Secundário:** Nenhum.
@@ -300,7 +300,7 @@ f.	Se o usuário não estiver logado, o Sistema reporta o fato com a mensagem �
 
 **Pós-condições:** Um usuário curtiu, denunciou ou respondeu a um comentário de outro usuário. Um usuário inseriu novo comentário, editou ou excluiu um novo comentário que havia submetido. 
 
-**Controlar zoom da visualização (CSU07)**
+####**Controlar zoom da visualização (CSU07)**
 
 **Sumário:** O usuário realiza o controle do zoom de visualização do Sistema por meio das opções “aumentar zoom” e “diminuir zoom”.
 **Ator Primário:** Usuário.
@@ -314,7 +314,7 @@ f.	Se o usuário não estiver logado, o Sistema reporta o fato com a mensagem �
 
 **Pós-condições:** Um usuário aumentou o zoom de visualização da página. Um usuário diminuiu o zoom de visualização da página.
 
-**Salvar para mais tarde (CSU08)**
+####**Salvar para mais tarde (CSU08)**
 
 **Sumário:** O usuário salva um conteúdo do Sistema para leitura posterior.
 **Ator Primário:** Usuário.
@@ -335,7 +335,7 @@ d.	O sistema apresenta listagem dos conteúdos salvos pelo usuário.
 
 **Pós-condições:** Um usuário salvou um conteúdo estático para leitura posterior. Um usuário realizou o login no Sistema e acessou os conteúdos salvos anteriormente.
 
-**Imprimir conteúdo (CSU09)**
+####**Imprimir conteúdo (CSU09)**
 
 **Sumário:** O usuário imprime um conteúdo do Sistema para download em PDF ou impressão física em impressora local.
 **Ator Primário: **Usuário.
@@ -350,7 +350,7 @@ d.	O sistema apresenta listagem dos conteúdos salvos pelo usuário.
 
 **Pós-condições:** Um usuário salvou um conteúdo estático em formato PDF no seu dispositivo local. Um usuário realizou a impressão física em uma impressora local.
 
-**Enviar feedback ou dúvida (CSU10)**
+####**Enviar feedback ou dúvida (CSU10)**
 
 **Sumário:** O usuário realiza o envio de um feedback sobre a página ou uma dúvida pessoal.
 **Ator Primário:** Usuário; Administradores.
@@ -371,7 +371,7 @@ c.	Caso se trate de uma dúvida, o administrador responsável pela análise enca
 **Pós-condições:** Um usuário encaminhou uma dúvida ou um feedback. Os administradores receberam uma dúvida ou um feedback de um usuário. Um administrador respondeu à dúvida ou feedback de um usuário.
 
 
-**Entrar no sistema / Sair do sistema (CSU11)**
+####**Entrar no sistema / Sair do sistema (CSU11)**
 
 **Sumário:** O usuário realiza o login e o logout no sistema. 
 **Ator Primário:** Usuário.
@@ -400,7 +400,7 @@ d.	O sistema realiza o logout do usuário e retorna a mensagem “Você fez o Lo
 **Pós-condições: **Um usuário realizou o login no sistema. Um usuário informou que esqueceu seu usuário/senha. Um usuário recebeu uma mensagem com as informações de suas credenciais de acesso. Um usuário realizou o logout no sistema.
 
 
-**Moderar comentários e Moderar usuários (CSU12)**
+####**Moderar comentários e Moderar usuários (CSU12)**
 
 **Sumário:** O administrador realiza a moderação de comentários e de usuários.
 **Ator Primário: **Administradores.
