@@ -400,15 +400,15 @@ d.	O sistema realiza o logout do usuário e retorna a mensagem “Você fez o Lo
 **Pós-condições: **Um usuário realizou o login no sistema. Um usuário informou que esqueceu seu usuário/senha. Um usuário recebeu uma mensagem com as informações de suas credenciais de acesso. Um usuário realizou o logout no sistema.
 
 
-|### Moderar comentários e Moderar usuários (CSU12)
+|### Moderar comentários e Moderar usuários (CSU12)|
 
-**Sumário:** O administrador realiza a moderação de comentários e de usuários.
-**Ator Primário: **Administradores.
-**Ator Secundário:** Usuário.
-**Pré-condições: **Autenticar no sistema.
-**Fluxo Principal:**
-1.	O administrador acessa o Sistema.
-2.	O administrador clica no botão “Entrar”.
+|**Sumário:** O administrador realiza a moderação de comentários e de usuários.|
+|**Ator Primário: **Administradores.|
+|**Ator Secundário:** Usuário.|
+|**Pré-condições: **Autenticar no sistema.|
+|**Fluxo Principal:**|
+|1.	O administrador acessa o Sistema.|
+|2.	O administrador clica no botão “Entrar”.|
 3.	O Sistema apresenta os campos usuário e senha e os botões entrar e esqueci meu usuário/senha. O administrador preenche os campos usuário e senha incorretamente e clica no botão entrar. O sistema retorna a mensagem “Usuário/senha incorreto. Tente novamente”. O administrador clica no botão “esqueci meu usuário/senha”. O sistema retorna a mensagem “informe o e-mail cadastrado”. O usuário informa o e-mail cadastrado e clica no botão enviar. O sistema valida o e-mail cadastrado. Se o e-mail não corresponder ao que foi informado pelo administrador no cadastro, o sistema retorna a mensagem “E-mail não encontrado. Tente novamente”. Se o e-mail informado estiver correto, o sistema encaminha para o e-mail do administrador um link para alteração de senha. O administrador altera sua senha e o sistema autoriza seu acesso. 
 4.	O usuário acessa o sistema com acesso privilegiado de administrador. 
 
