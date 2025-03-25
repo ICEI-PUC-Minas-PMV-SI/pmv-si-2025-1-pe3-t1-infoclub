@@ -271,7 +271,7 @@ d.	O sistema verifica se o usuário está logado. Se o usuário estiver logado, 
 e.	O usuário edita seu comentário e seleciona o botão “submeter comentário editado.<br>
 f.	Se o usuário não estiver logado, o Sistema reporta o fato com a mensagem “Usuário não logado. Faça o login para interagir”.<br>
 
-**Pós-condições:** Um usuário curtiu, denunciou ou respondeu a um comentário de outro usuário. Um usuário inseriu novo comentário, editou ou excluiu um novo comentário que havia submetido. 
+**Pós-condições:** Um usuário inseriu novo comentário, editou ou excluiu um novo comentário que havia submetido. 
 
 ### Pesquisar conteúdo (CSU06)
 
