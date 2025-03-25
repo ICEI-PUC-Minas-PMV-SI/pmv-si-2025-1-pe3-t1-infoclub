@@ -227,11 +227,17 @@ Fluxo Principal: Moderar Feedbacks e dúvidas.
 Após concluir a operação, o sistema confirma a ação. <br>
 
 ### Gerenciar Comentários (CSU05)
+
 **Sumário:** O usuário realiza inclusão, exclusão e edição dos próprios comentários, bem como visualização e resposta a comentários de terceiros.
+
 **Ator Primário:** Usuário.
+
 **Ator Secundário:** Nenhum.
+
 **Pré-condições:** O usuário deve ser validado/logado no sistema. 
+
 **Fluxo Principal:** 
+
 1.	O usuário acessa a página “Depoimentos”.<br> 
 2.	O usuário visualiza os comentários de terceiros.<br>
 3.	O Sistema apresenta as operações que podem ser realizadas: curtir comentário, denunciar comentário, responder comentário e inserir novo comentário.<br>
@@ -239,12 +245,14 @@ Após concluir a operação, o sistema confirma a ação. <br>
 5.	Se o usuário desejar continuar com o gerenciamento de comentários, o caso de uso retorna ao passo 2; caso contrário o caso de uso termina.<br>
 
 **Fluxo Alternativo (1):** Curtir comentário
+
 a.	O usuário visualiza um comentário preexistente de outro usuário.<br>
 b.	O Sistema apresenta a opção “curtir comentário”.<br>
 c.	O usuário curte o comentário.<br>
 d.	O Sistema verifica se o usuário está logado. Se o usuário estiver logado, o Sistema registra a ação. Se o usuário não estiver logado, o Sistema reporta o fato com a mensagem “Usuário não logado. Faça o login para interagir”.<br>
 
 **Fluxo Alternativo (2):** Denunciar comentário
+
 a.	O usuário visualiza um comentário preexistente de outro usuário.<br>
 b.	O Sistema apresenta a opção “denunciar comentário”.<br>
 c.	O usuário seleciona a opção “denunciar comentário”.<br>
@@ -253,6 +261,7 @@ e.	O usuário seleciona a opção que motiva a denúncia e seleciona o botão �
 f.	 Se o usuário não estiver logado, o Sistema reporta o fato com a mensagem “Usuário não logado. Faça o login para interagir”.<br>
 
 **Fluxo Alternativo (3):** Responder comentário
+
 a.	O usuário visualiza um comentário preexistente de outro usuário.<br>
 b.	O Sistema apresenta a opção “responder comentário”.<br>
 c.	O usuário seleciona a opção “responder comentário”.<br>
@@ -261,6 +270,7 @@ e.	O usuário redige seu comentário e seleciona o botão “submeter comentári
 f.	 Se o usuário não estiver logado, o Sistema reporta o fato com a mensagem “Usuário não logado. Faça o login para interagir”.<br>
 
 **Fluxo Alternativo (4):** Inserir novo comentário
+
 a.	O usuário acessa a página “Depoimentos”.<br>
 b.	O Sistema apresenta a opção “inserir novo comentário”.<br>
 c.	O usuário seleciona a opção “inserir novo comentário”.<br>
@@ -269,6 +279,7 @@ e.	O usuário redige seu comentário e seleciona o botão “submeter comentári
 f.	 Se o usuário não estiver logado, o Sistema reporta o fato com a mensagem “Usuário não logado. Faça o login para interagir”.<br>
 
 **Fluxo Alternativo (5):** Editar comentário
+
 a.	O usuário visualiza o próprio comentário submetido.<br>
 b.	O Sistema apresenta a opção “editar comentário”.<br>
 c.	O usuário seleciona a opção “editar comentário”.<br>
@@ -277,6 +288,7 @@ e.	O usuário edita seu comentário e seleciona o botão “submeter comentário
 f.	Se o usuário não estiver logado, o Sistema reporta o fato com a mensagem “Usuário não logado. Faça o login para interagir”.<br>
 
 **Fluxo Alternativo (6): **Excluir comentário
+
 a.	O usuário visualiza o próprio comentário submetido.<br>
 b.	O Sistema apresenta a opção “excluir comentário”.<br>
 c.	O usuário seleciona a opção “excluir comentário”.<br>
@@ -303,10 +315,15 @@ Fluxo Principal:
 ### Controlar zoom da visualização (CSU07)
 
 **Sumário:** O usuário realiza o controle do zoom de visualização do Sistema por meio das opções “aumentar zoom” e “diminuir zoom”.
+
 **Ator Primário:** Usuário.
+
 **Ator Secundário:** Nenhum.
+
 **Pré-condições:** Nenhuma.
+
 **Fluxo Principal:**
+
 1.	O usuário acessa o Sistema.<br>
 2.	O usuário visualiza os botões “aumentar zoom” e “diminuir zoom”.<br>
 3.	O usuário seleciona o botão “aumentar zoom”. O Sistema aumenta as letras da página atual.<br>
@@ -317,10 +334,15 @@ Fluxo Principal:
 ### Salvar para mais tarde (CSU08)
 
 **Sumário:** O usuário salva um conteúdo do Sistema para leitura posterior.
+
 **Ator Primário:** Usuário.
+
 **Ator Secundário:** Nenhum.
+
 **Pré-condições:** O usuário deve ser validado/logado no sistema. O conteúdo a ser salvo deve ser um conteúdo estático.
+
 **Fluxo Principal:**
+
 1.	O usuário acessa o Sistema.<br>
 2.	O usuário visualiza um conteúdo estático.<br>
 3.	O usuário seleciona o botão “Salvar para mais tarde”.<br>
@@ -328,6 +350,7 @@ Fluxo Principal:
 5.	Se o usuário não estiver logado, o Sistema reporta o fato com a mensagem “Usuário não logado. Faça o login para salvar”.<br>
 
 **Fluxo Alternativo (1):**
+
 a.	O usuário acessa o Sistema.<br>
 b.	O realiza login no Sistema.<br>
 c.	O usuário seleciona o botão “Conteúdos salvos”.<br>
@@ -338,10 +361,15 @@ d.	O sistema apresenta listagem dos conteúdos salvos pelo usuário.<br>
 ### Imprimir conteúdo (CSU09)
 
 **Sumário:** O usuário imprime um conteúdo do Sistema para download em PDF ou impressão física em impressora local.
+
 **Ator Primário: **Usuário.
+
 **Ator Secundário:** Nenhum.
+
 **Pré-condições:** O conteúdo a ser impresso deve ser um conteúdo estático. O usuário deve possuir uma impressora física e um conversor de PDF instalados.
+
 **Fluxo Principal:**
+
 1.	O usuário acessa o Sistema.<br>
 2.	O usuário visualiza um conteúdo estático.<br>
 3.	O usuário seleciona o botão “Imprimir”.<br>
@@ -353,10 +381,15 @@ d.	O sistema apresenta listagem dos conteúdos salvos pelo usuário.<br>
 ### Enviar feedback ou dúvida (CSU10)
 
 **Sumário:** O usuário realiza o envio de um feedback sobre a página ou uma dúvida pessoal.
+
 **Ator Primário:** Usuário; Administradores.
+
 **Ator Secundário:** Nenhum.
+
 **Pré-condições:** Preenchimento de campos obrigatórios.
+
 **Fluxo Principal:**
+
 1.	O usuário acessa a página “Ajuda”.<br>
 2.	O usuário visualiza o campo “Precisa de Ajuda?”.<br>
 3.	O preenche os campos nome, telefone, e-mail, estado, idade e descreva sua dúvida.<br>
@@ -364,6 +397,7 @@ d.	O sistema apresenta listagem dos conteúdos salvos pelo usuário.<br>
 5.	Se o usuário tiver preenchido todos os campos obrigatórios, o Sistema retorna a mensagem “Enviado! Aguarde o nosso contato”. Se o usuário não tiver preenchido todos os campos obrigatórios, o Sistema retornará a mensagem “Preencha este campo”, que aparecerá junto ao campo a ser preenchido.<br>
 
 **Fluxo Alternativo (1):** Tratamento das dúvidas e feedbacks enviados
+
 a.	Os administradores do Sistema acessam o e-mail registrado para recebimentos de dúvidas e feedbacks.<br>
 b.	Os administradores analisam as dúvidas e feedbacks encaminhados.<br>
 c.	Caso se trate de uma dúvida, o administrador responsável pela análise encaminhará resposta à dúvida para os meios de contato informados pelo usuário. Caso se trate de um feedback, o administrador responsável pela análise encaminhará a confirmação de recebimento do feedback, para os contatos informados pelo usuário, e registrará o feedback em documentação própria para futura e eventual implementação.<br>
@@ -374,16 +408,22 @@ c.	Caso se trate de uma dúvida, o administrador responsável pela análise enca
 ### Entrar no sistema / Sair do sistema (CSU11)
 
 **Sumário:** O usuário realiza o login e o logout no sistema. 
+
 **Ator Primário:** Usuário.
+
 **Ator Secundário:** Nenhum.
+
 **Pré-condições:** Possuir perfil pré-cadastrado no sistema. Preenchimento de campos obrigatórios.
+
 **Fluxo Principal:**
+
 1.	O usuário acessa o sistema.<br>
 2.	O usuário seleciona o botão “Entrar”.<br>
 3.	O sistema apresenta os campos usuário e senha e os botões entrar e esqueci meu usuário/senha. O usuário preenche os campos usuário e senha. Após, o usuário seleciona o botão “entrar”.<br>
 4.	O Sistema valida os dados informados. Se o usuário não possuir perfil pré-cadastrado, o sistema retorna a mensagem “Usuário não cadastrado. Deseja criar um perfil?” e apresenta os botões “Criar perfil” e “Continuar sem login”. Se o usuário optar por criar novo perfil, o Sistema redireciona ao caso de uso CSU01. Se o usuário optar por continuar sem login, o Sistema retorna ao item 1. Se o usuário possuir perfil pré-cadastrado mas tiver informado uma das credenciais de acesso incorretamente, o sistema retorna a mensagem “Usuário ou senha errados. Tente novamente”. Se o usuário possuir perfil pré-cadastrado e tiver informado as credenciais de acesso corretamente, o sistema autoriza o login.<br>
 
 **Fluxo Alternativo (1):** Esqueci meu usuário/senha
+
 a.	O usuário acessa o Sistema.<br>
 b.	O usuário seleciona o botão “Entrar”.<br>
 c.	O sistema apresenta os campos usuário e senha e os botões entrar e esqueci meu usuário/senha.<br>
@@ -392,6 +432,7 @@ e.	O sistema retorna a mensagem “Informe o telefone cadastrado”, o campo par
 f.	O usuário informa o celular cadastrado e seleciona o botão enviar. O sistema valida o celular informado. Se o celular informado corresponder ao que foi informado, o usuário receberá um SMS com as informações de suas credenciais de acesso (usuário e senha). Se o celular informado não corresponder ao que foi informado pelo usuário, o sistema retorna a mensagem “Telefone/celular não encontrado. Tente novamente”.<br>
 
 **Fluxo Alternativo (2):** Sair do Sistema
+
 a.	O usuário acessa o Sistema.<br>
 b.	O usuário realiza o login no sistema conforme fluxos anteriores.<br>
 c.	O usuário seleciona o botão “Sair do Sistema”.<br>
@@ -403,16 +444,22 @@ d.	O sistema realiza o logout do usuário e retorna a mensagem “Você fez o Lo
 ### Moderar comentários e Moderar usuários (CSU12)
 
 **Sumário:** O administrador realiza a moderação de comentários e de usuários.
+
 **Ator Primário: **Administradores.
+
 **Ator Secundário:** Usuário.
+
 **Pré-condições: **Autenticar no sistema.
+
 **Fluxo Principal:**
+
 1.	O administrador acessa o Sistema.<br>
 2.	O administrador clica no botão “Entrar”.<br>
 3.	O Sistema apresenta os campos usuário e senha e os botões entrar e esqueci meu usuário/senha. O administrador preenche os campos usuário e senha incorretamente e clica no botão entrar. O sistema retorna a mensagem “Usuário/senha incorreto. Tente novamente”. O administrador clica no botão “esqueci meu usuário/senha”. O sistema retorna a mensagem “informe o e-mail cadastrado”. O usuário informa o e-mail cadastrado e clica no botão enviar. O sistema valida o e-mail cadastrado. Se o e-mail não corresponder ao que foi informado pelo administrador no cadastro, o sistema retorna a mensagem “E-mail não encontrado. Tente novamente”. Se o e-mail informado estiver correto, o sistema encaminha para o e-mail do administrador um link para alteração de senha. O administrador altera sua senha e o sistema autoriza seu acesso.<br>
 4.	O usuário acessa o sistema com acesso privilegiado de administrador.<br>
 
 **Fluxo Alternativo (1):** Moderação de comentários
+
 a.	O administrador acessa a página “Depoimentos”.<br>
 b.	O sistema apresenta os comentários submetidos pelos usuários com o botão “moderar”.<br>
 c.	O administrador analisa os comentários submetidos e seleciona o botão “moderar”.<br>
@@ -421,6 +468,7 @@ e.	Se o administrador seleciona o botão “alterar”, o sistema torna o campo 
 f.	Se o administrador seleciona o botão “excluir”, o sistema retorna a mensagem “Motivo da exclusão” e lista os motivos que devem ser obrigatoriamente informados pelo administrador (spam, descrição de nudez ou atividade sexual, conduta ou símbolos de ódio, violência ou organizações perigosas, informação falsa, bullying ou assédio, golpe ou fraude). O administrador seleciona a o motivo e clica no botão “confirmar”. O sistema retorna a mensagem “Exclusão registrada” e registra internamente a identidade do moderador do comentário, o motivo da exclusão, o comentário excluído, a data e a hora da moderação, e passa a apresentar a mensagem “Comentário excluído pela moderação” no lugar do comentário original do usuário.<br>
 
 **Fluxo Alternativo (2):** Moderação de usuários
+
 a.	O administrador acessa a página “Listagem de Usuários”.<br>
 b.	O sistema apresenta listagem com todos os usuários cadastrados no sistema e o botão “Mais ações”.<br>
 c.	O administrador escolhe um usuário da lista e seleciona o botão “mais ações”.<br>
