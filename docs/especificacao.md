@@ -41,7 +41,7 @@ O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcela
 | RF2 | Gerenciar conteúdo estático |  Criação, consulta, exclusão e edição do conteúdo estático do software |
 | RF3 | Gerenciar conteúo interativo |  Criação, consulta, exclusão e edição do conteúdo interativo do software |
 | RF4 | Moderar feedbacks e dúvidas |  Moderação dos feedbacks e dúvidas enviados aos Administradores |
-| RF5 |	Gerenciar comentários	|Incluir, visualizar, responder, excluir e editar  comentários.  |
+| RF5 |	Gerenciar comentários	|Incluir, excluir e editar comentários.  |
 | RF6 |	Pesquisar conteúdo	|Ferramenta de pesquisa para listagem de interesses pré-definidos com base no público-alvo.  |
 | RF7 |	Controlar zoom da visualização| Controle do zoom da visualização do software a partir de uma ferramenta de lupa.|
 | RF8 |	Salvar para mais tarde	| O software deve permitir o salvamento de conteúdo para leitura posterior.  |
@@ -244,32 +244,7 @@ Após concluir a operação, o sistema confirma a ação. <br>
 4.	O usuário seleciona a operação desejada: curtir comentário, denunciar comentário, responder ao comentário, inserir novo comentário ou opta por finalizar o caso de uso.<br>
 5.	Se o usuário desejar continuar com o gerenciamento de comentários, o caso de uso retorna ao passo 2; caso contrário o caso de uso termina.<br>
 
-**Fluxo Alternativo (1):** Curtir comentário
-
-a.	O usuário visualiza um comentário preexistente de outro usuário.<br>
-b.	O Sistema apresenta a opção “curtir comentário”.<br>
-c.	O usuário curte o comentário.<br>
-d.	O Sistema verifica se o usuário está logado. Se o usuário estiver logado, o Sistema registra a ação. Se o usuário não estiver logado, o Sistema reporta o fato com a mensagem “Usuário não logado. Faça o login para interagir”.<br>
-
-**Fluxo Alternativo (2):** Denunciar comentário
-
-a.	O usuário visualiza um comentário preexistente de outro usuário.<br>
-b.	O Sistema apresenta a opção “denunciar comentário”.<br>
-c.	O usuário seleciona a opção “denunciar comentário”.<br>
-d.	O sistema verifica se o usuário está logado. Se o usuário estiver logado, o Sistema apresenta a caixa de diálogo “registra o motivo da denúncia” e relaciona os motivos passíveis de denúncia e o campo de preenchimento “outros” caso o motivo da denúncia não esteja listado.<br>
-e.	O usuário seleciona a opção que motiva a denúncia e seleciona o botão “enviar”. A denúncia é enviada.<br>
-f.	 Se o usuário não estiver logado, o Sistema reporta o fato com a mensagem “Usuário não logado. Faça o login para interagir”.<br>
-
-**Fluxo Alternativo (3):** Responder comentário
-
-a.	O usuário visualiza um comentário preexistente de outro usuário.<br>
-b.	O Sistema apresenta a opção “responder comentário”.<br>
-c.	O usuário seleciona a opção “responder comentário”.<br>
-d.	O sistema verifica se o usuário está logado. Se o usuário estiver logado, o Sistema apresenta o campo de preenchimento “Responder”.<br>
-e.	O usuário redige seu comentário e seleciona o botão “submeter comentário”.<br>
-f.	 Se o usuário não estiver logado, o Sistema reporta o fato com a mensagem “Usuário não logado. Faça o login para interagir”.<br>
-
-**Fluxo Alternativo (4):** Inserir novo comentário
+**Fluxo Alternativo (1):** Incluir novo comentário
 
 a.	O usuário acessa a página “Depoimentos”.<br>
 b.	O Sistema apresenta a opção “inserir novo comentário”.<br>
@@ -278,22 +253,22 @@ d.	O sistema verifica se o usuário está logado. Se o usuário estiver logado, 
 e.	O usuário redige seu comentário e seleciona o botão “submeter comentário”.<br>
 f.	 Se o usuário não estiver logado, o Sistema reporta o fato com a mensagem “Usuário não logado. Faça o login para interagir”.<br>
 
-**Fluxo Alternativo (5):** Editar comentário
-
-a.	O usuário visualiza o próprio comentário submetido.<br>
-b.	O Sistema apresenta a opção “editar comentário”.<br>
-c.	O usuário seleciona a opção “editar comentário”.<br>
-d.	O sistema verifica se o usuário está logado. Se o usuário estiver logado, o Sistema apresenta o campo de preenchimento “Editar” já pré-preenchido com o comentário selecionado para edição.<br>
-e.	O usuário edita seu comentário e seleciona o botão “submeter comentário editado.<br>
-f.	Se o usuário não estiver logado, o Sistema reporta o fato com a mensagem “Usuário não logado. Faça o login para interagir”.<br>
-
-**Fluxo Alternativo (6): **Excluir comentário
+**Fluxo Alternativo (2):** Excluir comentário
 
 a.	O usuário visualiza o próprio comentário submetido.<br>
 b.	O Sistema apresenta a opção “excluir comentário”.<br>
 c.	O usuário seleciona a opção “excluir comentário”.<br>
 d.	O sistema verifica se o usuário está logado. Se o usuário estiver logado, o Sistema apresenta a mensagem “Tem certeza de que deseja excluir seu comentário? (A ação não poderá ser revertida)” e os botões “Excluir” e “Não excluir”.<br>
 e.	O usuário seleciona a opção “Excluir” ou “Não excluir”.<br>
+f.	Se o usuário não estiver logado, o Sistema reporta o fato com a mensagem “Usuário não logado. Faça o login para interagir”.<br>
+
+**Fluxo Alternativo (3):** Editar comentário
+
+a.	O usuário visualiza o próprio comentário submetido.<br>
+b.	O Sistema apresenta a opção “editar comentário”.<br>
+c.	O usuário seleciona a opção “editar comentário”.<br>
+d.	O sistema verifica se o usuário está logado. Se o usuário estiver logado, o Sistema apresenta o campo de preenchimento “Editar” já pré-preenchido com o comentário selecionado para edição.<br>
+e.	O usuário edita seu comentário e seleciona o botão “submeter comentário editado.<br>
 f.	Se o usuário não estiver logado, o Sistema reporta o fato com a mensagem “Usuário não logado. Faça o login para interagir”.<br>
 
 **Pós-condições:** Um usuário curtiu, denunciou ou respondeu a um comentário de outro usuário. Um usuário inseriu novo comentário, editou ou excluiu um novo comentário que havia submetido. 
