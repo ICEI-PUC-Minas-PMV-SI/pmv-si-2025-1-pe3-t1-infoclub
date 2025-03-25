@@ -39,7 +39,7 @@ O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcela
 |--------------------|------------------------------------|----------------------------------------|
 | RF1 | Gerenciar usuário | A aplicação deve permitir que os usuários criem usuário e senha para acessar o sistema, podendo editar ou excluir as informações de acesso. A criação do usuário é opcional |
 | RF2 | Gerenciar conteúdo estático |  Criação, consulta, exclusão e edição do conteúdo estático do software |
-| RF3 | Gerenciar conteúo interativo |  Criação, consulta, exclusão e edição do conteúdo estático do conteúdo interativo do software |
+| RF3 | Gerenciar conteúo interativo |  Criação, consulta, exclusão e edição do conteúdo interativo do software |
 | RF4 | Moderar feedbacks e dúvidas |  Moderação dos feedbacks e dúvidas enviados aos Administradores |
 | RF5 |	Gerenciar comentários	|Incluir, visualizar, responder, excluir e editar  comentários.  |
 | RF6 |	Pesquisar conteúdo	|Ferramenta de pesquisa para listagem de interesses pré-definidos com base no público-alvo.  |
