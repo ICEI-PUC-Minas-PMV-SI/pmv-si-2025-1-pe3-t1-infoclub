@@ -37,9 +37,9 @@ O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcela
 
 | Código | Requisito Funcional (Funcionalidade) | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
-| RF1 | Criar usuário | A aplicação deve permitir que os usuários criem usuário e senha para acessar o sistema, podendo editar ou excluir as informações de acesso. A criação do usuário é opcional |
-| RF2 | Gerenciar conteúdo estático |  Inclusão, exclusão e edição do conteúdo informativo do software |
-| RF3 | Gerenciar conteúo interativo |  Inclusão, exclusão e edição do conteúdo interativo do software |
+| RF1 | Gerenciar usuário | A aplicação deve permitir que os usuários criem usuário e senha para acessar o sistema, podendo editar ou excluir as informações de acesso. A criação do usuário é opcional |
+| RF2 | Gerenciar conteúdo estático |  Criação, consulta, exclusão e edição do conteúdo estático do software |
+| RF3 | Gerenciar conteúo interativo |  Criação, consulta, exclusão e edição do conteúdo estático do conteúdo interativo do software |
 | RF4 | Moderar feedbacks e dúvidas |  Moderação dos feedbacks e dúvidas enviados aos Administradores |
 | RF5 |	Gerenciar comentários	|Incluir, visualizar, responder, excluir e editar  comentários.  |
 | RF6 |	Pesquisar conteúdo	|Ferramenta de pesquisa para listagem de interesses pré-definidos com base no público-alvo.  |
@@ -87,7 +87,7 @@ Como observado no diagrama de casos de uso da Figura 1, a secretária poderá ge
 
 Cada caso de uso deve ter a sua descrição representada nesta seção. Exemplo:
 
-#### Criar usuário (CSU01)
+#### Gerenciar usuário (CSU01)
 
 Sumário: O usuário realiza a criação de um perfil na plataforma, fornecendo informações básicas de identificação.
 
@@ -105,14 +105,14 @@ Fluxo Principal:
 4)  O sistema valida as informações e cria o usuário. <br>
 5)  O sistema exibe uma mensagem de sucesso. <br>
 
-Fluxo Alternativo: Alteração da senha
+Fluxo Alternativo: Alterar senha
 
 a)	O Usuário acessa a página de usuário. <br>
 b)	Seleciona a opção de alterar senha. <br>
 c)	Insere a senha atual e a nova senha. <br>
 d)	A senha do Usuário é alterada. <br>
 
-Fluxo Alternativo: Exclusão de conta
+Fluxo Alternativo: Excluir conta
 
 a)	O Usuário acessa a página de usuário. <br>
 b)	Seleciona a opção de excluir conta. <br>
@@ -177,7 +177,7 @@ Ator Primário: Administrador
 
 Ator Secundário: Nenhum.
 
-Fluxo Principal: Gerenciar conteúdo estático.
+Fluxo Principal: Gerenciar conteúdo interativo.
 
 1) O administrador realiza a gestão do conteúdo interativo do software. <br>
 2) São dadas as opções que podem ser realizadas: criação, consulta, edição e exclusão de conteúdo dentro do software. <br>
