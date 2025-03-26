@@ -49,8 +49,9 @@ O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcela
 | RF10 |Enviar feedback ou Dúvida.|A aplicação deve permitir que os usuários enviem feedback ou dúvidas aos administradores e os visualizem em seus perfis.|
 | RF11 | Entrar no sistema |A aplicação deve permitir que os usuários façam login.|
 | RF12 | Sair do sitema |A aplicação deve permitir que os usuários façam logout.|
-| RF13 | Moderar comentários |A aplicação deve permitir que os administradores incluam, excluam e editem comentários dos usuários.|
-| RF14 | Moderar usuários |A aplicação deve permitir que os administradores excluam e suspendam por tempo determinado os perfis de usuários.|
+| RF13 | Recuperar senha |A aplicação deve permitir que os usuários recuperem suas credenciais de acesso.|
+| RF14 | Moderar comentários |A aplicação deve permitir que os administradores incluam, excluam e editem comentários dos usuários.|
+| RF15 | Moderar usuários |A aplicação deve permitir que os administradores excluam e suspendam por tempo determinado os perfis de usuários.|
 
 
 
@@ -380,9 +381,9 @@ c.	Caso se trate de uma dúvida, o administrador responsável pela análise enca
 **Pós-condições:** Um usuário encaminhou uma dúvida ou um feedback. Os administradores receberam uma dúvida ou um feedback de um usuário. Um administrador respondeu à dúvida ou feedback de um usuário.
 
 
-### Entrar no sistema / Sair do sistema (CSU11)
+### Entrar no sistema (CSU11)
 
-**Sumário:** O usuário realiza o login e o logout no sistema. 
+**Sumário:** O usuário realiza o login no sistema. 
 
 **Ator Primário:** Usuário.
 
@@ -394,35 +395,61 @@ c.	Caso se trate de uma dúvida, o administrador responsável pela análise enca
 
 1.	O usuário acessa o sistema.<br>
 2.	O usuário seleciona o botão “Entrar”.<br>
-3.	O sistema apresenta os campos usuário e senha e os botões entrar e esqueci meu usuário/senha. O usuário preenche os campos usuário e senha. Após, o usuário seleciona o botão “entrar”.<br>
-4.	O Sistema valida os dados informados. Se o usuário não possuir perfil pré-cadastrado, o sistema retorna a mensagem “Usuário não cadastrado. Deseja criar um perfil?” e apresenta os botões “Criar perfil” e “Continuar sem login”. Se o usuário optar por criar novo perfil, o Sistema redireciona ao caso de uso CSU01. Se o usuário optar por continuar sem login, o Sistema retorna ao item 1. Se o usuário possuir perfil pré-cadastrado mas tiver informado uma das credenciais de acesso incorretamente, o sistema retorna a mensagem “Usuário ou senha errados. Tente novamente”. Se o usuário possuir perfil pré-cadastrado e tiver informado as credenciais de acesso corretamente, o sistema autoriza o login.<br>
+3.	O sistema apresenta os campos usuário e senha. O usuário preenche os campos usuário e senha. Após, o usuário seleciona o botão “entrar”.<br>
+4.	O Sistema valida os dados informados. Se o usuário possuir perfil pré-cadastrado e tiver informado as credenciais de acesso corretamente, o sistema autoriza o login.<br>
 
-**Fluxo Alternativo (1):** Esqueci meu usuário/senha
-
-a.	O usuário acessa o Sistema.<br>
-b.	O usuário seleciona o botão “Entrar”.<br>
-c.	O sistema apresenta os campos usuário e senha e os botões entrar e esqueci meu usuário/senha.<br>
-d.	O usuário seleciona a opção esqueci meu usuário/senha.<br>
-e.	O sistema retorna a mensagem “Informe o telefone cadastrado”, o campo para preenchimento e o botão enviar.<br>
-f.	O usuário informa o celular cadastrado e seleciona o botão enviar. O sistema valida o celular informado. Se o celular informado corresponder ao que foi informado, o usuário receberá um SMS com as informações de suas credenciais de acesso (usuário e senha). Se o celular informado não corresponder ao que foi informado pelo usuário, o sistema retorna a mensagem “Telefone/celular não encontrado. Tente novamente”.<br>
-
-**Fluxo Alternativo (2):** Sair do Sistema
-
-a.	O usuário acessa o Sistema.<br>
-b.	O usuário realiza o login no sistema conforme fluxos anteriores.<br>
-c.	O usuário seleciona o botão “Sair do Sistema”.<br>
-d.	O sistema realiza o logout do usuário e retorna a mensagem “Você fez o Logout”.<br>
-
-**Pós-condições: **Um usuário realizou o login no sistema. Um usuário informou que esqueceu seu usuário/senha. Um usuário recebeu uma mensagem com as informações de suas credenciais de acesso. Um usuário realizou o logout no sistema.
+**Pós-condições:** Um usuário realizou o login no sistema.
 
 
-### Moderar comentários e Moderar usuários (CSU12)
+### Sair do sistema (CSU12)
 
-**Sumário:** O administrador realiza a moderação de comentários e de usuários.
+**Sumário:** O usuário realiza o logout no sistema. 
+
+**Ator Primário:** Usuário.
+
+**Ator Secundário:** Nenhum.
+
+**Pré-condições:** Ter logado previamente no sistema. 
+
+**Fluxo Principal:** 
+
+1.	O usuário acessa o Sistema.<br>
+2.	O usuário realiza o login no sistema conforme CSU11.<br>
+3.	O usuário seleciona o botão “Sair do Sistema”.<br>
+4.	O sistema realiza o logout do usuário e retorna a mensagem “Você fez o Logout”.<br>
+
+**Pós-condições:** Um usuário realizou o logout no sistema.
+
+
+### Recuperar senha (CSU13) 
+
+**Sumário:** O usuário altera sua senha de acesso ao sistema. 
+
+**Ator Primário:** Usuário; Administradores.
+
+**Ator Secundário:** Nenhum.
+
+**Pré-condições:** Estar cadastrado no sistema. 
+
+**Fluxo Principal:** 
+
+1.	O usuário acessa o Sistema.<br>
+2.	O usuário seleciona o botão “Entrar”.<br>
+3.	O sistema apresenta os campos usuário e senha e os botões entrar e esqueci meu usuário/senha.<br>
+4.	O usuário seleciona a opção esqueci meu usuário/senha.<br>
+5.	O sistema retorna a mensagem “Informe o e-mail cadastrado”, o campo para preenchimento e o botão enviar.<br>
+6.	O usuário informa o e-mail cadastrado e seleciona o botão enviar. O sistema valida o e-mail informado. Se o e-mail informado corresponder ao que foi informado, o usuário receberá um e-mail com as informações de suas credenciais de acesso (usuário e senha). Se o e-mail informado não corresponder ao que foi informado pelo usuário, o sistema retorna a mensagem “E-mail não encontrado. Tente novamente”.<br>
+
+**Pós-condições:** Um usuário realizou o logout no sistema.
+
+
+### Moderar comentários (CSU14)
+
+**Sumário:** O administrador realiza a moderação de comentários.
 
 **Ator Primário: **Administradores.
 
-**Ator Secundário:** Usuário.
+**Ator Secundário:** Nenhum.
 
 **Pré-condições: **Autenticar no sistema.
 
@@ -430,32 +457,45 @@ d.	O sistema realiza o logout do usuário e retorna a mensagem “Você fez o Lo
 
 1.	O administrador acessa o Sistema.<br>
 2.	O administrador clica no botão “Entrar”.<br>
-3.	O Sistema apresenta os campos usuário e senha e os botões entrar e esqueci meu usuário/senha. O administrador preenche os campos usuário e senha incorretamente e clica no botão entrar. O sistema retorna a mensagem “Usuário/senha incorreto. Tente novamente”. O administrador clica no botão “esqueci meu usuário/senha”. O sistema retorna a mensagem “informe o e-mail cadastrado”. O usuário informa o e-mail cadastrado e clica no botão enviar. O sistema valida o e-mail cadastrado. Se o e-mail não corresponder ao que foi informado pelo administrador no cadastro, o sistema retorna a mensagem “E-mail não encontrado. Tente novamente”. Se o e-mail informado estiver correto, o sistema encaminha para o e-mail do administrador um link para alteração de senha. O administrador altera sua senha e o sistema autoriza seu acesso.<br>
+3.	O Sistema apresenta os campos usuário e senha e os botões entrar e esqueci meu usuário/senha. O sistema valida as credenciais de acesso e autoriza o login.<br>
 4.	O usuário acessa o sistema com acesso privilegiado de administrador.<br>
+5.	O administrador acessa a página “Depoimentos”.<br>
+6.	O sistema apresenta os comentários submetidos pelos usuários com o botão “moderar”.<br>
+7.	O administrador analisa os comentários submetidos e seleciona o botão “moderar”.<br>
+8.	O sistema exibe campo pré-preenchido com o comentário a ser moderado e os botões “alterar”, “excluir” e “confirmar”.<br>
+9.	Se o administrador seleciona o botão “alterar”, o sistema torna o campo do comentário editável, o administrador apaga as palavras consideradas ofensivas e clica em “confirmar”. O sistema retorna a mensagem “Motivo da alteração” e lista os motivos que devem ser obrigatoriamente informados pelo administrador (dados pessoais do usuário/terceiros, palavras impróprias, palavras ofensivas, link para acesso externo não autorizado). O administrador seleciona o motivo e clica no botão “confirmar”. O sistema retorna a mensagem “Alteração registrada” registra internamente a identidade do moderador do comentário, a alteração feita, o motivo da alteração e a versão original, a data e a hora da moderação, e passa a apresentar o comentário do usuário com o motivo da exclusão da palavra no lugar da palavra originalmente utilizada pelo usuário.<br>
+10.	Se o administrador seleciona o botão “excluir”, o sistema retorna a mensagem “Motivo da exclusão” e lista os motivos que devem ser obrigatoriamente informados pelo administrador (spam, descrição de nudez ou atividade sexual, conduta ou símbolos de ódio, violência ou organizações perigosas, informação falsa, bullying ou assédio, golpe ou fraude). O administrador seleciona a o motivo e clica no botão “confirmar”. O sistema retorna a mensagem “Exclusão registrada” e registra internamente a identidade do moderador do comentário, o motivo da exclusão, o comentário excluído, a data e a hora da moderação, e passa a apresentar a mensagem “Comentário excluído pela moderação” no lugar do comentário original do usuário.<br>
 
-**Fluxo Alternativo (1):** Moderação de comentários
+**Pós-condições:** Um administrador altera ou exclui o comentário de um usuário.
 
-a.	O administrador acessa a página “Depoimentos”.<br>
-b.	O sistema apresenta os comentários submetidos pelos usuários com o botão “moderar”.<br>
-c.	O administrador analisa os comentários submetidos e seleciona o botão “moderar”.<br>
-d.	O sistema exibe campo pré-preenchido com o comentário a ser moderado e os botões “alterar”, “excluir” e “confirmar”.<br>
-e.	Se o administrador seleciona o botão “alterar”, o sistema torna o campo do comentário editável, o administrador apaga as palavras consideradas ofensivas e clica em “confirmar”. O sistema retorna a mensagem “Motivo da alteração” e lista os motivos que devem ser obrigatoriamente informados pelo administrador (dados pessoais do usuário/terceiros, palavras impróprias, palavras ofensivas, link para acesso externo não autorizado). O administrador seleciona o motivo e clica no botão “confirmar”. O sistema retorna a mensagem “Alteração registrada” registra internamente a identidade do moderador do comentário, a alteração feita, o motivo da alteração e a versão original, a data e a hora da moderação, e passa a apresentar o comentário do usuário com o motivo da exclusão da palavra no lugar da palavra originalmente utilizada pelo usuário.<br>
-f.	Se o administrador seleciona o botão “excluir”, o sistema retorna a mensagem “Motivo da exclusão” e lista os motivos que devem ser obrigatoriamente informados pelo administrador (spam, descrição de nudez ou atividade sexual, conduta ou símbolos de ódio, violência ou organizações perigosas, informação falsa, bullying ou assédio, golpe ou fraude). O administrador seleciona a o motivo e clica no botão “confirmar”. O sistema retorna a mensagem “Exclusão registrada” e registra internamente a identidade do moderador do comentário, o motivo da exclusão, o comentário excluído, a data e a hora da moderação, e passa a apresentar a mensagem “Comentário excluído pela moderação” no lugar do comentário original do usuário.<br>
 
-**Fluxo Alternativo (2):** Moderação de usuários
+### Moderar usuários (CSU15)
 
-a.	O administrador acessa a página “Listagem de Usuários”.<br>
-b.	O sistema apresenta listagem com todos os usuários cadastrados no sistema e o botão “Mais ações”.<br>
-c.	O administrador escolhe um usuário da lista e seleciona o botão “mais ações”.<br>
-d.	O sistema exibe os dados cadastrais do usuário selecionado e os botões, o registro de atividades do usuário no sistema e os botões “bloquear usuário”.<br>
-e.	O sistema exibe a mensagem “indique o motivo para o bloqueio” e a listagem de motivos para bloqueio do perfil do usuário: envio reiterado de spam, comportamento inadequado reiteradamente (descrição de nudez ou atividade sexual; conduta ou símbolos de ódio; violência ou organizações perigosas; informação falsa; bullying ou assédio; golpe ou fraude), o usuário está se passando por terceiros, perfil falso, usuário inativo por mais de 365 dias; o campo “observações” e o botão “confirmar bloqueio”.<br>
-f.	O administrador seleciona uma das opções da lista de motivos, preenche facultativamente o campo “observações” e seleciona o botão “confirmar bloqueio”.<br>
-g.	O sistema retorna a mensagem “usuário bloqueado”, registra internamente a identidade do administrador responsável pelo bloqueio, o motivo do bloqueio, a data e a hora do bloqueio, e passa a apresentar a mensagem usuário bloqueado no cadastro interno do usuário e o botão “desbloquear usuário”. O sistema encaminha e-mail para o usuário informando sobre o bloqueio do perfil, o motivo do bloqueio e concedendo a opção do usuário responder ao e-mail para recorrer administrativamente do bloqueio.<br>
-h.	O sistema passa a apresentar a mensagem “usuário bloqueado” quando o usuário tenta realizar login no sistema e nos comentários feitos pelo usuário, no lugar de sua identificação.<br>
-i.	Se o recurso ao bloqueio do usuário foi considerado pertinente pelos administradores, o fluxo retorna ao item “a”, e o administrador poderá acessar o cadastro do usuário bloqueado, clicar no botão “desbloquear usuário”, e o sistema retornará a mensagem “Informe o motivo do desbloqueio” com o campo para preenchimento manual obrigatório pelo administrador e o botão “confirmar desbloqueio”.<br>
-j.	O sistema retira as informações de bloqueio do usuário e retorna a exibição das informações de cadastro do usuário nos comentários feitos por este.<br>
+**Sumário:** O administrador realiza a moderação de comentários e de usuários.
 
-**Pós-condições:** Um administrador altera ou exclui o comentário de um usuário. Um administrador bloqueia um usuário. Um administrador desbloqueia um usuário.|
+**Ator Primário: **Administradores.
+
+**Ator Secundário:** Nenhum.
+
+**Pré-condições: **Autenticar no sistema.
+
+**Fluxo Principal:**
+1.	O administrador acessa o Sistema.<br>
+2.	O administrador clica no botão “Entrar”.<br>
+3.	O Sistema apresenta os campos usuário e senha e os botões entrar e esqueci meu usuário/senha. O sistema valida as credenciais de acesso e autoriza o login.<br>
+4.	O usuário acessa o sistema com acesso privilegiado de administrador.<br>
+5.	O administrador acessa a página “Listagem de Usuários”.<br>
+6.	O sistema apresenta listagem com todos os usuários cadastrados no sistema e o botão “Mais ações”.<br>
+7.	O administrador escolhe um usuário da lista e seleciona o botão “mais ações”.<br>
+8.	O sistema exibe os dados cadastrais do usuário selecionado e os botões, o registro de atividades do usuário no sistema e os botões “bloquear usuário”.<br>
+9.	O sistema exibe a mensagem “indique o motivo para o bloqueio” e a listagem de motivos para bloqueio do perfil do usuário: envio reiterado de spam, comportamento inadequado reiteradamente (descrição de nudez ou atividade sexual; conduta ou símbolos de ódio; violência ou organizações perigosas; informação falsa; bullying ou assédio; golpe ou fraude), o usuário está se passando por terceiros, perfil falso, usuário inativo por mais de 365 dias; o campo “observações” e o botão “confirmar bloqueio”.<br>
+10.	O administrador seleciona uma das opções da lista de motivos, preenche facultativamente o campo “observações” e seleciona o botão “confirmar bloqueio”.<br>
+10.	O sistema retorna a mensagem “usuário bloqueado”, registra internamente a identidade do administrador responsável pelo bloqueio, o motivo do bloqueio, a data e a hora do bloqueio, e passa a apresentar a mensagem usuário bloqueado no cadastro interno do usuário e o botão “desbloquear usuário”. O sistema encaminha e-mail para o usuário informando sobre o bloqueio do perfil, o motivo do bloqueio e concedendo a opção do usuário responder ao e-mail para recorrer administrativamente do bloqueio.<br>
+11.	O sistema passa a apresentar a mensagem “usuário bloqueado” quando o usuário tenta realizar login no sistema e nos comentários feitos pelo usuário, no lugar de sua identificação.<br>
+12.	Se o recurso ao bloqueio do usuário foi considerado pertinente pelos administradores, o fluxo retorna ao item “a”, e o administrador poderá acessar o cadastro do usuário bloqueado, clicar no botão “desbloquear usuário”, e o sistema retornará a mensagem “Informe o motivo do desbloqueio” com o campo para preenchimento manual obrigatório pelo administrador e o botão “confirmar desbloqueio”.<br>
+13.	O sistema retira as informações de bloqueio do usuário e retorna a exibição das informações de cadastro do usuário nos comentários feitos por este.<br>
+
+**Pós-condições:** Um administrador bloqueia um usuário. Um administrador desbloqueia um usuário.|
 
 
 ### 3.4.3 Diagrama de Classes 
