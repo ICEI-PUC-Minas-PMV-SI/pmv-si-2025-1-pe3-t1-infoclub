@@ -78,7 +78,7 @@ O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcela
 ## 3.4 Modelagem do Sistema
 
 ### 3.4.1 Diagrama de Casos de Uso
-Como observado no diagrama de casos de uso da Figura 1, a secretária poderá gerenciar as matrículas e professores no sistema, enquanto o coordenador, além dessas funções, poderá gerenciar os cursos de aperfeiçoamento.
+Como observado no diagrama de casos de uso da Figura 1, o Administrador poderá gerenciar os conteúdos estático e interativo, moderar comentários, moderar usuários e moderar feedbacks e dúvidas, ao passo que o usuário poderá enviar feedback ou dúvida, salvar conteúdos para mais tarde, gerenciar seu usuário, recuperar senha, entrar no sistema, sair do sistema, gerenciar seus comentários, pesquisar conteúdos, controlar o zoom da visualização e imprimir conteúdo.
 
 #### Figura 1: Diagrama de Casos de Uso do Sistema.
 
@@ -87,7 +87,7 @@ Como observado no diagrama de casos de uso da Figura 1, a secretária poderá ge
  
 ### 3.4.2 Descrições de Casos de Uso
 
-Cada caso de uso deve ter a sua descrição representada nesta seção. Exemplo:
+Cada caso de uso tem a sua descrição representada nesta seção:
 
 #### Gerenciar usuário (CSU01)
 
@@ -501,7 +501,7 @@ c.	Caso se trate de uma dúvida, o administrador responsável pela análise enca
 
 ### 3.4.3 Diagrama de Classes 
 
-A Figura 2 mostra o diagrama de classes do sistema. A Matrícula deve conter a identificação do funcionário responsável pelo registro, bem com os dados do aluno e turmas. Para uma disciplina podemos ter diversas turmas, mas apenas um professor responsável por ela.
+A Figura 2 mostra o diagrama de classes do sistema. A classe Feedback deve conter um usuário, mensagem e a data do seu envio. A classe Usuário deve conter um nome, e-mail e senha, atributos que são herdados da classe Administrador. A classe Conteúdo Estático herda atributos da classe Conteúdo Estático, que deve possuir um título, descrição e a data da sua publicação. A classe Comentário deve possuir um texto e a data de sua publicação. 
 
 #### Figura 2: Diagrama de Classes do Sistema.
  
@@ -512,9 +512,9 @@ A Figura 2 mostra o diagrama de classes do sistema. A Matrícula deve conter a i
 
 | # | Nome | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
-| 1	|	Aluno |	Cadastro de informações relativas aos alunos. |
-| 2	| Curso |	Cadastro geral de cursos de aperfeiçoamento. |
-| 3 |	Matrícula |	Cadastro de Matrículas de alunos nos cursos. |
-| 4 |	Turma |	Cadastro de turmas.
-| 5	|	Professor |	Cadastro geral de professores que ministram as disciplinas. |
-| ... |	... |	... |
+| 1	|	Administrador |	Perfil com informações relativas aos administradores. |
+| 2	| Usuário |	Perfil com informações relativas aos administradores. |
+| 3 |	Feedback |	Feedbacks sobre o sistema enviados pelos usuários. |
+| 4 |	Comentário |	Comentários enviados por usuários de forma pública ou anônima. |
+| 5	|	Conteúdo Interativo |	Conteúdos interativos disponibilizados no sistema. |
+| 6 |	Conteúdo Estático |	Conteúdos estáticos disponibilizados no sistema. |
