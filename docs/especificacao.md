@@ -42,7 +42,7 @@ O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcela
 | RF3 | Gerenciar conteúo interativo |  Criação, consulta, exclusão e edição do conteúdo interativo do software |
 | RF4 | Moderar feedbacks e dúvidas |  Moderação dos feedbacks e dúvidas enviados aos Administradores |
 | RF5 |	Gerenciar comentários	|Incluir, excluir e editar comentários.  |
-| RF6 |	Pesquisar conteúdo	|Ferramenta de pesquisa para listagem de interesses pré-definidos com base no público-alvo.  |
+| RF6 |	Listar conteúdo	|Ferramenta para listagem de interesses pré-definidos com base no público-alvo.  |
 | RF7 |	Controlar zoom da visualização| Controle do zoom da visualização do software a partir de uma ferramenta de lupa.|
 | RF8 |	Salvar para mais tarde	| O software deve permitir o salvamento de conteúdo para leitura posterior.  |
 | RF9 | Imprimir conteúdo| O software deve possuir botão de impressão para permitir que o usuário imprima as páginas em PDF ou em impressora local.|
@@ -275,17 +275,17 @@ f.	Se o usuário não estiver logado, o Sistema reporta o fato com a mensagem �
 
 **Pós-condições:** Um usuário inseriu novo comentário, editou ou excluiu um novo comentário que havia submetido. 
 
-### Pesquisar conteúdo (CSU06)
+### Listar conteúdo (CSU06)
 
 Fluxo Principal:
 
-1) O usuário acessa a funcionalidade de pesquisa. <br>
+1) O usuário acessa a funcionalidade de listagem. <br>
 
-2) O sistema exibe um campo de busca. <br>
+2) O sistema exibe a lista de conteúdos da aplicação. <br>
 
-3) O usuário insere um termo de pesquisa. <br>
+3) O usuário seleciona na lista o conteúdo do seu interesse. <br>
 
-4) O sistema retorna os resultados correspondentes. <br>
+4) O sistema redireciona o usuário para a página selecionada. <br>
 
 5) O usuário acessa o conteúdo desejado. <br>
 
