@@ -15,7 +15,7 @@ Mapa de Empatia 1: Alessandra
 
 Nesta seção serão apresentados os protótipos de alta fidelidade do sistema Infoclube.
 
-Página "Leis Digitais"
+#### Página "Leis Digitais"
 
 ![icei-puc-minas-pmv-si github io_pmv-si-2024-1-pe1-t2-desinformacaodigital_src_pages_leisdigitais_leisdigitais html (4)](https://github.com/user-attachments/assets/5d783111-72d6-4d41-a712-b15a8b6a3955)
 
@@ -56,3 +56,42 @@ A página "Leis Digitais" visa informar os usuários sobre os principais aspecto
 
 - Ajuda e Documentação: a seção oferece explicações detalhadas sobre as leis digi-tais, servindo como um recurso educativo para os usuários.
 
+#### Página Palavras Cruzadas
+
+![icei-puc-minas-pmv-si github io_pmv-si-2024-1-pe1-t2-desinformacaodigital_src_pages_clubedosaber_palavrascruzadas_palavrascruzadas html](https://github.com/user-attachments/assets/a536718b-3c79-4105-8219-5fa46fb88536)
+
+#### Objetivo .
+
+A atividade da página ‘palavras cruzadas’ tem como objetivo promover o aprendi-zado interativo sobre tecnologia e segurança digital. Ao resolver os enigmas, os usu-ários reforçam seu conhecimento de forma lúdica, facilitando a assimilação de con-ceitos importantes relacionados ao ambiente digital.
+
+#### Princípios da Gestalt seguidos .
+
+- Proximidade: As pistas estão organizadas próximas às áreas correspondentes do jogo, facilitando a associação entre a dica e a posição na grade.
+
+- Continuidade: A disposição linear das pistas e a estrutura da grade proporcionam uma navegação intuitiva e fluida.
+
+- Similaridade: Elementos com funções semelhantes, como os botões "RESPON-DER", "Apagar" e "Solução", possuem estilos visuais consistentes, auxiliando na identificação de suas funcionalidades.
+
+- Figura e Fundo: O contraste entre o fundo da página e os elementos interativos destaca as áreas clicáveis, melhorando a usabilidade.
+
+#### Regras ergonômicas observadas .
+
+- Consistência: A interface mantém padrões visuais e funcionais ao longo da ativi-dade, proporcionando uma experiência de usuário coesa.
+
+- Feedback Imediato: Após inserir uma resposta, o sistema fornece retorno visual ins-tantâneo, indicando acertos com a cor verde e erros com a cor vermelha.
+
+- Minimização da Carga Cognitiva: As instruções são claras e objetivas, permitindo que o usuário compreenda facilmente como interagir com a atividade.
+
+- Acessibilidade: O design considera aspectos de acessibilidade, como contraste adequado e estruturação semântica, facilitando o acesso para todos os usuários.
+
+#### Regras de ouro observadas .
+
+- Mantenha o Usuário Informado: O sistema fornece feedback imediato sobre as ações do usuário, como a validação das respostas inseridas.
+
+- Permita o Controle do Usuário: Os usuários têm a liberdade de interagir com as pistas na ordem desejada e podem utilizar os botões "Apagar" e "Solução" conforme necessário.
+
+- Consistência e Padrões: A atividade segue padrões de design e interação comuns, facilitando a compreensão e o uso por parte dos usuários.
+
+- Prevenção de Erros: As instruções claras e o feedback visual ajudam a evitar e cor-rigir erros durante a interação com a atividade.
+
+- Ajuda e Documentação: A página oferece instruções detalhadas sobre como utilizar a atividade, auxiliando os usuários em caso de dúvidas.
