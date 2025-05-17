@@ -1,12 +1,12 @@
-# Título do Projeto
+# Infoclube
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t2-desinformacaodigital/assets/160979479/bdd41641-4f4e-4343-a4e4-af0af03cdf39)
 
 `CURSO: Sistemas de Informação`
 
 `DISCIPLINA: Projeto - Design de Centrado no Usuário`
 
 `SEMESTRE: 3º`
-
-![image](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t2-desinformacaodigital/assets/160979479/bdd41641-4f4e-4343-a4e4-af0af03cdf39)
 
 Uma ferramenta educativa para capacitar idosos e grupos vulneráveis a navegar com segurança na internet, identificar desinformação e proteger-se contra golpes online. Busca promover uma sociedade mais informada e engajada, enfrentando o analfabetismo digital e os desafios da era digital.
 ## Integrantes
