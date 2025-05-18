@@ -56,6 +56,112 @@ Mapa de Empatia 6: Beatriz
 
 Nesta seção serão apresentados os protótipos de alta fidelidade do sistema Infoclube.
 
+#### Página “Inicial”
+
+![image](https://github.com/user-attachments/assets/f1a5fcd0-833c-4bc5-8aa3-476fae3af6c8)
+
+
+
+
+
+#### Objetivo.
+
+A página principal do InfoClube tem como objetivo oferecer uma experiência digital acessível e acolhedora para pessoas idosas, promovendo inclusão digital, segu-rança e autonomia. A interface é voltada para facilitar a navegação e o aprendizado de tecnologias essenciais de forma amigável, reforçando a importância da educação digital na terceira idade.
+
+Desde o topo, a página busca engajar o usuário com frases motivacionais e mensa-gens positivas, como “Aprenda e abrace o mundo digital!”. Acompanhando essa pro-posta, a interface apresenta ferramentas de acessibilidade visíveis, como zoom, lei-tor de tela e botões de navegação por páginas, além de instruções explicativas de fácil compreensão. O conteúdo é dividido em blocos temáticos que abordam segu-rança digital, prevenção d
+
+
+#### Princípios da Gestalt seguidos.
+
+Proximidade: Os blocos de conteúdo e os ícones de acessibilidade estão agrupa-dos de forma lógica, facilitando a compreensão da função de cada seção. Os recur-sos são apresentados juntos, o que indica ao usuário que pertencem ao mesmo con-texto de uso.
+
+Similaridade: Ícones e botões seguem padrões visuais consistentes (mesmo estilo, formato e cor), o que permite ao usuário reconhecer padrões e interações similares ao longo do site.
+
+Figura-fundo: O contraste de cores entre os elementos (como texto branco sobre fundo azul escuro) destaca claramente o conteúdo principal do plano de fundo, favo-recendo a legibilidade.
+
+Continuidade: O fluxo visual é coerente, conduzindo o olhar do usuário do topo da página (com a imagem principal e chamada motivacional), para os ícones laterais e depois para os blocos informativos, respeitando uma hierarquia visual natural.
+
+Foco: As informações são organizadas com destaque para o que é mais importante, como os títulos de cada seção em branco e letras maiores, chamando a atenção para os temas centrais da navegação.
+
+
+#### Regras ergonômicas observadas.
+
+Oferecer feedback informativo: As instruções da página explicam detalhadamente como utilizar os ícones e ferramentas disponíveis, evitando ambiguidades. Os bo-tões têm representações visuais claras, como a seta para avançar e retornar, o que garante que o usuário saiba o que esperar ao clicar.
+
+Aumentar a legibilidade: A interface utiliza cores contrastantes, ícones de fácil re-conhecimento e texto com espaçamento adequado, garantindo leitura confortável para idosos, mesmo com possíveis limitações visuais.
+
+Agrupamento funcional: Os elementos são organizados por funcionalidade. Os ícones de acessibilidade estão juntos na lateral direita, os cards de aprendizado es-tão na seção central, e os espaços de apoio e comunidade no rodapé.
+
+Uso de linguagem clara: Toda a comunicação da página é feita em linguagem sim-ples, acessível e direta, respeitando o nível de familiaridade dos usuários com tecno-logia.
+
+Facilidade de uso: A navegação é intuitiva, com foco na redução de complexidade. O site fornece instruções logo na primeira visualização, sem exigir conhecimento prévio em tecnologia.
+
+
+#### Regras de ouro observadas.
+
+Perseguir a consistência: A página segue uma identidade visual coesa com cores, fontes e ícones padronizados, criando familiaridade ao longo da navegação. O usuá-rio reconhece os mesmos ícones em diferentes seções do site, reforçando o apren-dizado.
+
+Oferecer atalhos: Os ícones laterais permitem ações rápidas como zoom, leitura em voz alta e navegação por páginas, facilitando a vida do usuário que já conhece o sistema.
+
+Reduzir a carga de memória de trabalho: O sistema fornece explicações claras sobre o uso dos elementos da interface, evitando que o usuário tenha que lembrar informações entre páginas. Os elementos se repetem em posição e estilo, dimi-nuindo o esforço cognitivo.
+
+Oferecer controle ao usuário: Há botões visíveis para avançar, voltar ou retornar à página principal. Isso transmite segurança, pois o usuário sabe que pode desfazer ações a qualquer momento.
+
+
+### Página “Introdução Tecnológica”
+
+![image](https://github.com/user-attachments/assets/fdcf325c-fedc-4e21-85ba-7e165ad36047)
+
+
+
+### Objetivo .
+
+A página “Introdução Tecnológica” tem como objetivo proporcionar uma imersão acessível e didática no universo da informática para o público iniciante, com foco es-pecial no público idoso. Por meio de uma linguagem clara, visual amigável e recur-sos interativos, o conteúdo apresenta os conceitos básicos de tecnologia — desde a história dos computadores até o funcionamento de hardware e software, além de ori-entações sobre segurança digital e uso do teclado.
+
+Organizada em seções temáticas com títulos destacados e ilustrações explicativas, a página guia o usuário de forma progressiva, permitindo que ele compreenda os principais componentes e usos da tecnologia em seu dia a dia. Ao final, há dicas práticas e atalhos de teclado para fortalecer o aprendizado funcional.
+
+### Princípios da Gestalt seguidos.
+
+Proximidade: Os conteúdos relacionados são agrupados em blocos temáticos, facili-tando a compreensão de que pertencem à mesma área de conhecimento (ex: Hardware, Software, Segurança).
+
+Similaridade: As caixas de conteúdo seguem um mesmo padrão visual — bordas ar-redondadas, fundo claro e tipografia consistente — criando unidade e coerência vi-sual em toda a página.
+
+Figura-fundo: O fundo azul escuro com elementos visuais claros (caixas, textos e ícones) cria contraste eficaz, destacando as informações principais e facilitando a leitura.
+
+Boa continuidade: O conteúdo segue uma sequência lógica de aprendizado, com transições suaves entre tópicos (da história da computação à prática com teclado), o que facilita o acompanhamento, mesmo para quem tem pouco domínio do assunto.
+
+Foco: O uso de ícones, imagens ilustrativas e divisões claras ajuda o usuário a iden-tificar os temas de forma imediata e entender o que está sendo abordado em cada seção.
+
+
+### Regras ergonômicas observadas.
+
+Uso de linguagem acessível: Os textos são escritos de maneira direta e sem jargões técnicos, garantindo compreensão por parte de pessoas com pouca familiaridade com tecnologia.
+
+Organização clara da informação: A divisão por seções com títulos evidentes per-mite que o usuário navegue pelo conteúdo de forma autônoma, sabendo onde co-meça e termina cada assunto.
+
+Feedback visual: Os elementos gráficos, como botões, ilustrações e molduras, refor-çam o conteúdo textual, fornecendo pistas visuais que auxiliam no entendimento.
+
+Legibilidade e contraste: O alto contraste entre o fundo escuro e os textos claros, além do uso de fontes legíveis e bem espaçadas, favorece a leitura por pessoas com dificuldades visuais ou que utilizam óculos.
+
+Redução da sobrecarga cognitiva: O conteúdo é apresentado em porções curtas, com textos breves acompanhados de imagens, o que facilita a assimilação da infor-mação.
+
+Dicas práticas e interação: A seção com atalhos de teclado e comandos básicos ofe-rece instruções práticas que podem ser testadas diretamente, incentivando o apren-dizado ativo.
+
+
+### Regras de ouro observadas.
+
+Consistência visual e funcional: A estrutura da página mantém a identidade visual do InfoClube, com elementos gráficos, cores e ícones recorrentes em todo o site.
+
+Flexibilidade e eficiência no uso: A presença de dicas rápidas e atalhos contribui para que o usuário explore o conteúdo com mais autonomia, adequando o uso da tecnologia à sua própria realidade.
+
+Prevenção de erros: A seção sobre segurança digital fornece orientações sobre cui-dados com antivírus, senhas e golpes, prevenindo erros comuns e reforçando a na-vegação segura.
+
+Apoio ao reconhecimento em vez da memorização: Ao invés de depender da memó-ria do usuário, o conteúdo oferece ícones, exemplos e atalhos visuais que servem de referência imediata.
+
+Acessibilidade persistente: A barra lateral com ícones fixos oferece ferramentas de acessibilidade e navegação rápida, permitindo que o usuário adapte a experiência conforme suas necessidades.
+
+
+
 #### Página “Real ou Falso”
 
 ![image](https://github.com/user-attachments/assets/07b8ea3f-d27b-45be-b99d-d84bb06aa29a)
@@ -172,6 +278,55 @@ A atividade da página ‘palavras cruzadas’ tem como objetivo promover o apre
 - Prevenção de Erros: As instruções claras e o feedback visual ajudam a evitar e cor-rigir erros durante a interação com a atividade.
 
 - Ajuda e Documentação: A página oferece instruções detalhadas sobre como utilizar a atividade, auxiliando os usuários em caso de dúvidas.
+
+
+### Página “Clube do Saber”
+
+![image](https://github.com/user-attachments/assets/3f5d7ed1-27d7-4efc-9ce1-2f4a491ee687)
+
+
+### Objetivo .
+
+A página “Clube do Saber” tem como propósito estimular o aprendizado de forma di-vertida e interativa, especialmente voltada ao público idoso. Por meio de jogos clás-sicos como Forca, Palavras Cruzadas e Passeio Tecnológico, o site promove o desenvolvimento de habilidades cognitivas e digitais, reforçando a memória, a aten-ção e o vocabulário, ao mesmo tempo em que proporciona entretenimento.
+
+Cada atividade é apresentada em cartões verticais com ilustrações vibrantes e expli-cações acessíveis. As descrições incentivam o usuário a participar, contextualizando os benefícios de cada jogo. A página equilibra estética retrô com elementos moder-nos, tornando a experiência visual nostálgica e envolvente.
+
+
+### Princípios da Gestalt seguidos .
+
+Proximidade: Os elementos relacionados a cada atividade (imagem, título e descri-ção) estão agrupados em um mesmo card, o que indica claramente que pertencem à mesma função.
+
+Similaridade: Todos os cards seguem o mesmo padrão visual — formato retangu-lar, cor de fundo, tipografia e estrutura — o que facilita a leitura e o reconhecimento de padrão.
+
+Figura-fundo: O fundo escuro com estrelas permite que os elementos em azul e branco (textos e cartões) se destaquem nitidamente, facilitando a navegação e a concentração no conteúdo.
+
+Continuidade: A leitura flui naturalmente do topo para baixo, com os cards dispos-tos em uma sequência vertical. A navegação é intuitiva e direciona o olhar para os jogos apresentados de forma progressiva.
+
+Foco: O uso de ilustrações coloridas e expressivas no topo de cada card atrai imedi-atamente a atenção para o conteúdo. O título em negrito e centralizado facilita a identificação do tema de cada jogo.
+
+
+### Regras ergonômicas observadas .
+
+Oferecer feedback informativo: Cada jogo conta com uma descrição clara de como funciona e o que esperar, preparando o usuário para a interação e reduzindo incertezas.
+
+Aumentar a legibilidade: O texto branco em contraste com o fundo azul dos car-tões oferece ótima leitura, mesmo para pessoas com dificuldades visuais. A fonte é grande e bem espaçada, respeitando as necessidades do público-alvo.
+
+Agrupamento funcional: Os jogos estão organizados em blocos visuais bem defini-dos. Os ícones de acessibilidade (na lateral direita) permanecem fixos e bem posici-onados, facilitando seu uso sem confundir com o conteúdo principal.
+
+Uso de linguagem clara: Os textos são diretos e acolhedores, utilizando frases sim-ples e encorajadoras, pensadas para quem está em processo de inclusão digital.
+
+Facilidade de uso: A estrutura da página é limpa, sem poluição visual. O foco em três jogos por vez reduz a sobrecarga de informação e favorece a concentração do usuário.
+
+
+### Regras de ouro observadas .
+
+Perseguir a consistência: Toda a página segue um padrão visual coeso: cores, ícones, fontes e estilos são os mesmos dos demais ambientes do InfoClube, refor-çando a identidade visual da plataforma.
+
+Oferecer atalhos e acessibilidade: A lateral direita da página apresenta uma barra fixa com ícones de acessibilidade, como zoom, leitura em voz alta, retorno à página inicial e navegação por seções. Isso permite que o usuário mantenha o controle da experiência.
+
+Reduzir a carga de memória de trabalho: A organização clara, os ícones familia-res e a repetição de padrões entre seções garantem que o usuário não precise se lembrar de informações ao navegar. O design apoia a memorização e a autonomia.
+
+Dar visibilidade às ações: Os jogos são apresentados de forma visualmente atra-tiva e com descrições explicativas, informando exatamente o que o usuário encon-trará ao clicar.
 
 
 #### Página “Passeio Tecnológico”
