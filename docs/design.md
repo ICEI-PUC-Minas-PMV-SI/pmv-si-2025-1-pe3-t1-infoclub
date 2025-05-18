@@ -166,10 +166,11 @@ Acessibilidade persistente: A barra lateral com ícones fixos oferece ferramenta
 
 ![image](https://github.com/user-attachments/assets/07b8ea3f-d27b-45be-b99d-d84bb06aa29a)
 
-#### Objetivo .
+#### Objetivo 
+
 A página “Real ou Falso” reúne links para as principais páginas de checagem de fatos, bem como links para a notícias mais comentadas na semana e que foram veri-ficadas por essas páginas. O público alvo da aplicação são indivíduos que se infor-mam pela redes sociais e páginas da internet, mas que encontram dificuldades em identificar em quais notícias pode confiar. Assim, a página “Real ou Falso” tem por intuito indicar as principais e mais confiáveis páginas de checagem de fatos, bem como direcionar para notícias mais específicas com a qual o usuário possa ter en-trado em contato, mas não tenha se atentado para o conteúdo falso ou de desinfor-mação contido na notícia.  
 
-#### Princípios da Gestalt seguidos . 
+#### Princípios da Gestalt seguidos 
 
 •	Proximidade: os cards para acesso a páginas de checagem de fatos (grupo 1) e os cards para acesso a notícias específicas checadas (grupo 2), foram dispostos em dois grupos, permitindo ao usuário identificar se tratar de gru-pos distintos de informações.
 
@@ -181,7 +182,7 @@ A página “Real ou Falso” reúne links para as principais páginas de checag
 
 •	Destino comum: os cards foram alinhados com as informações clicáveis fo-ram dispostos em sequência horizontal em sentido de leitura ocidental, con-tribuindo para a identificação como pertencentes a um mesmo grupo. 
 
-#### Regras ergonômicas observadas .
+#### Regras ergonômicas observadas 
 
 •	Projeto de ícones: a página utiliza do recurso de metáfora no seu projeto de ícones, com a utilização de ícones visualmente convencionados — como a lupa, para representar as ações de zoom in ou zoom out, e o ícone de alto fa-lante para indicar a ação de leitura do conteúdo em voz alta —, facilitando o reconhecimento imediato das funções, sem exigir a leitura de rótulos.
 
@@ -189,7 +190,7 @@ A página “Real ou Falso” reúne links para as principais páginas de checag
 
 •	Interface web: a informação contida na página é disposta de forma a permitir ao usuário sua fácil absorção. A página é dotada de ícones que indicam ao usuário como se mover pelo site — a exemplo das setas direcionadas à es-querda, para retornar à página anterior; à direita para seguir à página seguin-te e a seta sobre uma porta, para retornar à página inicial — assim como é do-tada de um menu lateral que permite a rápida visualização e direcionamento a todas as demais páginas da aplicação, e ainda, a localização do ponto em que o usuário se encontra. 
 
- #### Regras de ouro observadas . 
+ #### Regras de ouro observadas  
 
 •	Perseguir a Consistência: a página “Real ou Falso” segue o mesmo padrão visual que as demais páginas, incluindo formatos de ícone, cores e tipografi-as.
 
@@ -197,6 +198,42 @@ A página “Real ou Falso” reúne links para as principais páginas de checag
 
 •	Reduzir a Carga de Memória de Trabalho: o conteúdo da página “Real ou Falso” é apresentado de maneira objetiva e focada no objetivo a que a página se propõe. Os ícones encontrados desde a primeira página da aplicação são mantidos na página “Real ou Falso”, reduzindo a necessidade de lembrar de informações entre as telas. 
 
+### Página “Depoimentos”  
+
+![image](https://github.com/user-attachments/assets/fd4598e3-e6f6-4ad2-97be-f8717f69fb68)
+
+
+### Objetivo:
+
+O objetivo é dar voz às pessoas idosas para que compartilhem suas experiências com a tecnologia. É um espaço de acolhimento, onde elas podem contar histórias, aprender com outras pessoas e se sentirem mais seguras no mundo digital.
+
+### Princípios da Gestalt seguidos:
+
+· Proximidade: os campos do formulário de envio (nome, e-mail, depoimento) estão dispostos em sequência vertical e separados do restante da página por uma caixa distinta, facilitando ao usuário a identificação de que esses ele-mentos fazem parte de um mesmo grupo funcional.
+
+· Continuidade: os depoimentos dos usuários são dispostos em sequência vertical contínua, seguindo o fluxo natural de leitura, o que favorece a navega-ção e leitura fluida dos relatos.
+
+· Simetria: os depoimentos seguem o mesmo padrão de layout, com alinha-mento à esquerda e distribuição simétrica de texto dentro dos contêineres, promovendo equilíbrio visual.
+
+· Similaridade: os cards de depoimentos mantêm estrutura visual idêntica (mesmo tamanho, cor de fundo, bordas e tipografia), permitindo ao usuário re-conhecê-los como pertencentes a uma mesma categoria de conteúdo.
+
+· Figura-fundo: a diferenciação entre o fundo escuro e as caixas brancas de conteúdo textual favorece a distinção entre elementos ativos e passivos da in-terface, reforçando a hierarquia visual da informação.
+
+### Regras de ouro observadas:
+
+· Projeto de ícones: a interface utiliza metáforas visuais familiares em seus ícones, como a lupa para busca, o alto-falante para leitura em voz alta, e o ícone de porta com seta para indicar retorno à página inicial, promovendo re-conhecimento imediato das funções.
+
+· Objetos de apresentação: os textos são apresentados em fonte legível, com espaçamento adequado entre linhas e sem uso excessivo de caixa alta. A es-trutura da seção de depoimentos está organizada em caixas com bordas bem definidas, o que contribui para a separação clara entre os conteúdos.
+
+· Interface web: a navegação é facilitada por botões paginados e um menu la-teral com ícones funcionais. A seta para a esquerda indica o retorno à página anterior, enquanto a seta para a direita leva o usuário à próxima. O botão com número da página atual também indica visualmente o ponto de navegação onde o usuário se encontra.
+
+### Regras de ouro observadas:
+
+· Perseguir a consistência: todos os elementos da interface seguem um pa-drão visual consistente, com uso das mesmas cores (azul e branco), tipogra-fia, espaçamento e estilos de botão, reforçando a identidade da aplicação.
+
+· Permitir a reversão de ações: o sistema de navegação lateral e a paginação na parte inferior da tela permitem que o usuário volte à página anterior com facilidade, seguindo padrões fa
+
+· Reduzir a carga de memória de trabalho: a página mantém ícones e estru-turas visuais consistentes com o restante da interface, reduzindo a necessi-dade de reaprendizado a cada tela e permitindo foco total na ação principal: leitura e envio de depoimentos.
 
 #### Página "Leis Digitais"
 
