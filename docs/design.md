@@ -52,13 +52,6 @@ Mapa de Empatia 6: Beatriz
 ![Beatriz](https://github.com/user-attachments/assets/1439793e-9899-472f-b13c-aaac2d4e4571)
 
 
-
-
-
-
-
-
-
 ## 4.3 Protótipos das Interfaces
 
 Nesta seção serão apresentados os protótipos de alta fidelidade do sistema Infoclube.
