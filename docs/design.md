@@ -61,17 +61,14 @@ Nesta seção serão apresentados os protótipos de alta fidelidade do sistema I
 ![image](https://github.com/user-attachments/assets/f1a5fcd0-833c-4bc5-8aa3-476fae3af6c8)
 
 
-
-
-
-#### Objetivo.
+#### Objetivo:
 
 A página principal do InfoClube tem como objetivo oferecer uma experiência digital acessível e acolhedora para pessoas idosas, promovendo inclusão digital, segu-rança e autonomia. A interface é voltada para facilitar a navegação e o aprendizado de tecnologias essenciais de forma amigável, reforçando a importância da educação digital na terceira idade.
 
 Desde o topo, a página busca engajar o usuário com frases motivacionais e mensa-gens positivas, como “Aprenda e abrace o mundo digital!”. Acompanhando essa pro-posta, a interface apresenta ferramentas de acessibilidade visíveis, como zoom, lei-tor de tela e botões de navegação por páginas, além de instruções explicativas de fácil compreensão. O conteúdo é dividido em blocos temáticos que abordam segu-rança digital, prevenção d
 
 
-#### Princípios da Gestalt seguidos.
+#### Princípios da Gestalt seguidos:
 
 Proximidade: Os blocos de conteúdo e os ícones de acessibilidade estão agrupa-dos de forma lógica, facilitando a compreensão da função de cada seção. Os recur-sos são apresentados juntos, o que indica ao usuário que pertencem ao mesmo con-texto de uso.
 
@@ -84,7 +81,7 @@ Continuidade: O fluxo visual é coerente, conduzindo o olhar do usuário do topo
 Foco: As informações são organizadas com destaque para o que é mais importante, como os títulos de cada seção em branco e letras maiores, chamando a atenção para os temas centrais da navegação.
 
 
-#### Regras ergonômicas observadas.
+#### Regras ergonômicas observadas:
 
 Oferecer feedback informativo: As instruções da página explicam detalhadamente como utilizar os ícones e ferramentas disponíveis, evitando ambiguidades. Os bo-tões têm representações visuais claras, como a seta para avançar e retornar, o que garante que o usuário saiba o que esperar ao clicar.
 
@@ -97,7 +94,7 @@ Uso de linguagem clara: Toda a comunicação da página é feita em linguagem si
 Facilidade de uso: A navegação é intuitiva, com foco na redução de complexidade. O site fornece instruções logo na primeira visualização, sem exigir conhecimento prévio em tecnologia.
 
 
-#### Regras de ouro observadas.
+#### Regras de ouro observadas:
 
 Perseguir a consistência: A página segue uma identidade visual coesa com cores, fontes e ícones padronizados, criando familiaridade ao longo da navegação. O usuá-rio reconhece os mesmos ícones em diferentes seções do site, reforçando o apren-dizado.
 
@@ -108,10 +105,47 @@ Reduzir a carga de memória de trabalho: O sistema fornece explicações claras 
 Oferecer controle ao usuário: Há botões visíveis para avançar, voltar ou retornar à página principal. Isso transmite segurança, pois o usuário sabe que pode desfazer ações a qualquer momento.
 
 
+### Página “Glossário”
+
+![image](https://github.com/user-attachments/assets/6a27c83a-c925-4014-ac15-2280ab24a983)
+
+
+### Objetivo:
+
+A página de glossário tem como objetivo principal apoiar a compreensão de termos técnicos e expressões comuns do universo digital, especialmente voltado ao público idoso. Ao organizar os conteúdos de forma clara, acessível e navegável por ordem alfabética, a página busca promover a autonomia digital, reduzindo barreiras de en-tendimento e facilitando a consulta rápida a conceitos que podem surgir durante a navegação em outras seções da aplicação.
+
+### Princípios da Gestalt seguidos: 
+
+· Proximidade: os termos estão agrupados por letra inicial, o que permite ao usuário identificar visualmente que se trata de blocos de conteúdo relaciona-dos, facilitando a navegação e compreensão da organização.
+
+· Continuidade: os termos dentro de cada seção seguem um fluxo vertical uni-forme, com espaçamento e alinhamento consistentes, permitindo a leitura se-quencial e previsível do conteúdo.
+
+· Simetria: todas as caixas de termos seguem o mesmo padrão de largura, margens, tipografia e disposição, promovendo equilíbrio visual e facilitando a identificação da estrutura repetida.
+
+· Similaridade: os blocos de definição possuem o mesmo estilo visual (fundo azul escuro, textos em branco, títulos em negrito), o que permite ao usuário reconhecer rapidamente os elementos com a mesma função informativa.
+
+· Figura-fundo: a utilização de fundo escuro para o glossário, com texto em branco e detalhes em azul claro, estabelece contraste suficiente para diferen-ciar os elementos de leitura do fundo da interface, facilitando a visualização.
+
+### Regras de ouro observadas:
+
+· Projeto de ícones: a lateral da página mantém o uso de metáforas visuais fa-miliares, como a lupa (para busca), o ícone de áudio (leitura em voz alta), o botão de acessibilidade, e a seta sobre uma porta (para voltar à página ini-cial), facilitando a identificação funcional.
+
+· Objetos de apresentação: o glossário evita o uso de caixa alta, organiza o conteúdo em colunas e seções bem delimitadas por letras do alfabeto, com espaçamento entre os termos e uso de títulos claros, tornando a leitura mais confortável.
+
+· Interface web: a barra superior apresenta o alfabeto, permitindo acesso di-reto aos termos por letra inicial, reduzindo o esforço cognitivo do usuário. A página oferece ainda ícones fixos para acessibilidade e navegação, garan-tindo fluidez na movimentação pelo site.
+
+### Regras ergonômicas observadas:
+
+· Perseguir a consistência: o layout do glossário mantém a mesma identidade visual observada nas demais páginas da aplicação (como a de depoimentos), com padronização de cores, tipografia, espaçamento e distribuição dos ele-mentos.
+
+· Permitir a reversão de ações: o menu lateral com o ícone de seta sobre a porta permite o retorno imediato à página inicial, além da barra de letras que facilita a navegação entre os blocos sem exigir recarga ou retorno de página.
+
+· Reduzir a carga de memória de trabalho: a organização em ordem alfabé-tica, o padrão repetido nos cartões de definição e o uso constante dos mes-mos ícones permitem que o usuário navegue e compreenda o conteúdo sem necessidade de relembrar instruções ou se adaptar a novos layouts. 
+
+
 ### Página “Introdução Tecnológica”
 
 ![image](https://github.com/user-attachments/assets/fdcf325c-fedc-4e21-85ba-7e165ad36047)
-
 
 
 ### Objetivo .
