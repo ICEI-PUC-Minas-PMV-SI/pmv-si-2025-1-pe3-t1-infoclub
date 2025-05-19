@@ -449,3 +449,126 @@ A página “Passeio Tecnológico” consiste em conteúdo interativo em que o u
 
 •	Reduzir a Carga de Memória de Trabalho: a interface apresenta instruções claras na própria tela, sem exigir que o usuário memorize comandos ou etapas. Ainda, o uso de números progressivos nos círculos contendo as perguntas do quiz indica a ordem das ações, ajudando na orientação sequencial sem exigir esforço mental extra. Além disso, os ícones da barra lateral direita são autoexplicativos.
 
+
+
+#### Página “Forca”
+
+![forca](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t2-desinformacaodigital/assets/160187639/bee8a4bb-f958-470b-8d69-c466aa34a3e2)
+
+#### Objetivo .
+A página “Jogo da Forca” tem como objetivo promover uma experiência lúdica e inte-rativa para os usuários do site, desafiando-os a descobrir o nome do golpe apresen-tado no site. Por meio do tradicional jogo da forca, o usuário é estimulado a refletir sobre os conteúdos exibidos anteriormente e reforçar o aprendizado de forma diver-tida.
+No topo da página, frases de impacto incentivam o desafio e valorizam a superação. O jogo é acompanhado de dicas visuais como o número de letras e o tema relacio-nado. Cada tentativa incorreta resulta na adição de uma parte do corpo do boneco, enquanto as letras corretas são destacadas em verde, e as incorretas em rosa. Ao final do jogo, uma mensagem parabeniza o usuário.
+
+#### Princípios da Gestalt seguidos .
+
+· Proximidade: Os botões de letras são organizados em um mesmo bloco vi-sual, sugerindo que pertencem a uma única funcionalidade (o jogo)
+
+· Similaridade: As letras são apresentadas em botões de mesmo tamanho, for-mato e estilo, indicando que todas compartilham a mesma função interativa.
+
+· Simetria: A disposição das letras segue uma grade uniforme, proporcionando equilíbrio visual e facilidade na interação.
+
+· Boa continuidade: Os elementos do jogo seguem um fluxo visual coerente — do enforcado no centro às letras logo abaixo — conduzindo naturalmente a atenção do usuário.
+
+· Figura-fundo: O destaque da forca com fundo escuro e elementos coloridos permite uma separação clara entre o jogo e o restante da página.
+
+#### Regras ergonômicas observadas .
+
+· Feedback imediato e visual: O jogo responde instantaneamente às ações do usuário. Letras corretas ficam verdes, letras incorretas ficam rosas e, a cada erro, uma nova parte do boneco da forca é desenhada. Esse retorno vi-sual reforça a percepção de progresso (ou falha) durante a tarefa.
+
+· Mensagens de conclusão claras: Ao final da partida, o sistema exibe pop-ups personalizados de acordo com o resultado:
+
+Quando o usuário acerta a palavra, surge um pop-up com a mensagem: “Pa-rabéns, você acertou!”.
+
+Quando o usuário erra, é exibido: “Você perdeu! A palavra era…”, informando de forma direta o desfecho da partida e revelando a palavra correta.
+
+· Distribuição e legibilidade da informação: As instruções são apresentadas antes do jogo, com linguagem acessível e boa hierarquia visual. O contraste entre o fundo azul escuro e os textos claros garante leitura confortável.
+
+· Agrupamento funcional: As letras do alfabeto estão dispostas em grade or-ganizada, o que facilita o reconhecimento e evita confusões durante a esco-lha.
+
+· Facilidade de uso: O jogo tem uma mecânica simples e fácil de entender. Como o jogo da forca já é conhecido por muitas pessoas, o usuário consegue jogar sem precisar de explicações complexas. As instruções e os elementos visuais ajudam a entender o que fazer logo de início.
+
+· Contextualização da atividade: O jogo está diretamente relacionado ao con-teúdo apresentado anteriormente no site (golpes estudados), o que reforça o aprendizado ao transformar o conhecimento em desafio.
+
+#### Regras de ouro observadas .
+
+· Perseguir a Consistência: a página “Forca” segue o mesmo padrão visual que as demais páginas, incluindo formatos de ícone, cores e tipografias.
+
+· Permitir a Reversão de Ações: seguindo o padrão das demais páginas da aplicação, a página “Forca” disponibiliza o ícone em formato de seta voltada para a esquerda, a fim de possibilitar que o usuário retorne à página anterior.
+
+· Reduzir a Carga de Memória de Trabalho: o conteúdo da página “Forca” é apresentado de maneira objetiva e focada no objetivo a que a página se pro-põe. Os ícones encontrados desde a primeira página da aplicação são manti-dos na página “Forca”, reduzindo a necessidade de lembrar de informações entre as telas.
+
+
+
+#### Página “Como Indentificar um Golpe”
+
+![identgolpe](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t2-desinformacaodigital/assets/160187639/ad9fb942-7edc-4988-be90-9c36ca4ce4d1)
+
+#### Objetivo .
+A página “Como Identificar um Golpe” tem objetivo de tirar dúvi-das e preocupações quando se trata de identificar golpes, especi-almente considerando a criatividade e sofisticação dos golpistas hoje em dia. Logo abaixo com alguns tópicos importantes como: Estou com dúvidas quanto a golpes, O que é golpe do Pix?, Como me prevenir de golpes online?, Como posso saber se caí em um golpe online?, em cada tópico uma explicação para ajudar nosso publico alvo. E logo abaixo para finalizar, informamos abaixo 4 golpes mais populares, existentes no mundo da Rede Social – online.
+
+#### Princípios da Gestalt seguidos .
+
+· Proximidade: Os textos estão organizados em blocos bem definidos e espaça-dos. Cada seção tem seu próprio fundo com bordas arredondadas e cores que a destacam, o que ajuda o leitor a perceber que são conteúdos diferentes, mesmo que estejam todos na mesma página.
+
+· Boa continuidade: A leitura flui naturalmente de cima para baixo, com os blo-cos de conteúdo alinhados verticalmente, criando uma linha contínua de lei-tura.
+
+· Simetria: As quatro caixas com os tipos de golpe no final (“Golpe Phishing”, “Golpe Catfish”, etc.) estão dispostas simetricamente lado a lado, com o mesmo tamanho e formato, facilitando a comparação entre eles.
+
+· Similaridade: As cores e fontes são usadas de forma consistente: os títulos estão em branco sobre fundo azul escuro, os textos explicativos em branco so-bre azul claro, e os botões seguem a mesma padronização visual.
+
+· Destino comum: Embora a imagem seja estática, a organização vertical da in-formação conduz o olhar do leitor de cima para baixo — esse “fluxo” visual é um exemplo de destino comum aplicado ao layout.
+
+#### Regras ergonômicas observadas .
+
+· Projeto de ícones: a página utiliza do recurso de metáfora no seu projeto de ícones, com a utilização de ícones como a lupa, para representar as ações de zoom in ou zoom out, e o ícone de alto falante para indicar a ação de leitura do conteúdo em voz alta.
+
+· Objetos de apresentação: a seção textual da página evita a utilização da hi-fenização, adota o espaçamento entre parágrafos e é inserido entre bordas explicitas. O texto é redigido evitando a utilização de caixa alta.
+
+· Interface web: a informação contida na página é disposta de forma a permitir ao usuário sua fácil absorção. A página é dotada de ícones que indicam ao usuário como se mover pelo site — a exemplo das setas direcionadas à es-querda, para retornar à página anterior; à direita para seguir à página se-guinte e a seta sobre uma porta, para retornar à página inicial — assim como é dotada de um menu lateral que permite a rápida visualização e direciona-mento a todas as demais páginas da aplicação, e ainda, a localização do ponto em que o usuário se encontra.
+
+#### Regras de ouro observadas .
+
+· Perseguir a Consistência: a página “Como Identificar um Golpe” segue o mesmo padrão visual que as demais páginas, incluindo formatos de ícone, cores e tipografias.
+
+· Permitir a Reversão de Ações: seguindo o padrão das demais páginas da aplicação, a página “Como Identificar um Golpe” disponibiliza o ícone em for-mato de seta voltada para a esquerda, a fim de possibilitar que o usuário re-torne à página anterior.
+
+· Reduzir a Carga de Memória de Trabalho: o conteúdo da página “Como Identificar um Golpe” é apresentado de maneira objetiva e focada no objetivo a que a página se propõe. Os ícones encontrados desde a primeira página da aplicação são mantidos na página “Como Identificar um Golpe”, reduzindo a necessidade de lembrar de informações entre as telas
+
+
+
+#### Página “Ajuda”
+
+![ajuda](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t2-desinformacaodigital/assets/160187639/0d5b4d15-07a2-41a8-9edd-a2dbca7d154e)
+
+#### Objetivo .
+A página “Ajuda” tem como objetivo oferecer suporte e orientação aos usuários que estejam enfrentando dificuldades ou que tenham dúvidas relacionadas à navegação, uso da plataforma ou qualquer outro assunto pertinente ao site. Ainda na página tem dois cards que te leva para outro site para saber mais sobre o tema desejado! Ao centro, destaca-se um formulário de contato com o título “Precisa de ajuda?”, onde o usuário pode preencher informações como nome, telefone, e-mail, assunto e uma descrição detalhada de sua dúvida ou problema.
+
+Além disso, a página conta com um menu lateral com ícones de navegação rápida e um rodapé com a identidade da plataforma. A proposta principal é garantir que os usuários se sintam acolhidos e tenham um canal eficiente para buscar assistência sempre que necessário.
+
+#### Princípios da Gestalt seguidos .
+
+· Proximidade: Os textos estão organizados em blocos bem definidos e espaça-dos. Cada seção tem seu próprio fundo com bordas arredondadas e cores que a destacam, o que ajuda o leitor a perceber que são conteúdos diferentes, mesmo que estejam todos na mesma página.
+
+· Boa continuidade: A leitura flui naturalmente de cima para baixo, com os blo-cos de conteúdo alinhados verticalmente, criando uma linha contínua de lei-tura.
+
+· Simetria: As quatro caixas com os tipos de golpe no final (“Golpe Phishing”, “Golpe Catfish”, etc.) estão dispostas simetricamente lado a lado, com o mesmo tamanho e formato, facilitando a comparação entre eles.
+
+· Similaridade: As cores e fontes são usadas de forma consistente: os títulos estão em branco sobre fundo azul escuro, os textos explicativos em branco so-bre azul claro, e os botões seguem a mesma padronização visual.
+
+· Destino comum: Embora a imagem seja estática, a organização vertical da in-formação conduz o olhar do leitor de cima para baixo — esse “fluxo” visual é um exemplo de destino comum aplicado ao layout.
+
+#### Regras ergonômicas observadas .
+
+· Projeto de ícones: a página utiliza do recurso de metáfora no seu projeto de ícones, com a utilização de ícones como a lupa, para representar as ações de zoom in ou zoom out, e o ícone de alto falante para indicar a ação de leitura do conteúdo em voz alta.
+
+· Objetos de apresentação: a seção textual da página evita a utilização da hi-fenização, adota o espaçamento entre parágrafos e é inserido entre bordas explicitas. O texto é redigido evitando a utilização de caixa alta.
+
+· Interface web: a informação contida na página é disposta de forma a permitir ao usuário sua fácil absorção. A página é dotada de ícones que indicam ao usuário como se mover pelo site — a exemplo das setas direcionadas à es-querda, para retornar à página anterior; à direita para seguir à página se-guinte e a seta sobre uma porta, para retornar à página inicial — assim como é dotada de um menu lateral que permite a rápida visualização e direciona-mento a todas as demais páginas da aplicação, e ainda, a localização do ponto em que o usuário se encontra.
+
+#### Regras de ouro observadas .
+
+· Perseguir a Consistência: a página “Ajuda” segue o mesmo padrão visual que as demais páginas, incluindo formatos de ícone, cores e tipografias.
+
+· Permitir a Reversão de Ações: seguindo o padrão das demais páginas da aplicação, a página “Ajuda” disponibiliza o ícone em formato de seta voltada para a esquerda, a fim de possibilitar que o usuário retorne à página anterior.
+
+· Reduzir a Carga de Memória de Trabalho: o conteúdo da página “Ajuda” é apresentado de maneira objetiva e focada no objetivo a que a página se pro-põe. Os ícones encontrados desde a primeira página da aplicação são manti-dos na página “Ajuda”, reduzindo a necessidade de lembrar de informações entre as telas.
