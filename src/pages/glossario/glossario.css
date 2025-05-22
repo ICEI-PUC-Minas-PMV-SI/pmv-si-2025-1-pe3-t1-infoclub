@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+    font-family: 'Open Sans';
+}
+
+/*NAVBAR */
+
+.navbar{
+    background-color:#f6f4f3 ;
+ }
+
+ .navbar-toggler{
+    display: block;
+    height: 100px;
+    width: 100px;
+    margin-left: 100px;
+    border: none !important;
+ }
+
+ .btn-outline-light{
+    margin-right: 100px;
+    border: #ffffff !important;
+ }
+
+ .navbar-toggler:hover{
+    background-color: white !important;
+ }
+
+ .btn-outline-light:hover{
+    background-color: white !important;
+ }
+
+ span{
+    box-sizing: border-box;
+    color:#000000;
+    font-family: "Open Sans", sans-serif ;
+    font-weight:bolder;
+    font-size: x-large;
+ }
+ 
+ span:hover{
+    background-color:#2e417e; 
+    border-radius: 5px;
+    color:#f6f4f3 ;
+}
+
+h5 img{
+    margin-bottom: 10px;
+    margin-left: 2px;
+}  
+    
+.sub{
+    text-decoration: none !important;
+}
+    
+p a{
+    text-decoration: none !important;
+    color:#2e417e;
+    font-size:110%;
+    font-weight:700;
+    font-family: "Open Sans", sans-serif ;
+}
+    
+p a:hover{
+    background-color: #988dc1;
+    border-radius: 5px;
+}
+    
+.custom-dropdown-menu {
+    background-color: #f6f4f3 !important;
+    border: none;
+    
+}
+.custom-dropdown-menu:hover{
+    background-color: white !important;
+    border:none;
+}
+    
+ /*GLOSSÁRIO */
+
+.paragrafo {
+    padding: 10px 20px;
+    margin: 20px auto 10px;
+    font-weight: normal;
+    color: #fff;
+    background-color: #01184e;
+    text-align: center;
+    border-radius: 28px;
+    align-items: center;
+}
+
+.paragrafo h1 {
+    margin: 0;
+}
+
+#letterlinks{
+    margin-bottom: 50px;
+    padding-left: 30px;
+    background-color: #2e417e;
+    border-radius: 5px;
+    text-align: center;
+    border-radius: none;
+    width: 100%;
+}
+
+#letterlinks a{
+    font-size: 1.5em; color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 0.6em;
+}
+
+dt{
+    margin-top: 2em; 
+    margin-bottom: .7em;
+    color: #fff; 
+    font-weight: bold;
+    padding-left: 30px;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+dd{
+    color: #fff; margin-left: 1em;
+    margin-left: 1em;
+    margin-right: 8em;
+    padding-left: 30px;
+    font-weight: 3px;
+
+}
+
+article h2{
+    padding-left: 30px;
+    color: #fff;
+}
+
+a.topolink{
+    background-color: #2e417e;
+    color: #fff;
+    padding: 12px;
+    position: fixed; bottom: 2em; left: 2em;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a.topolink:hover{
+    background-color: #988dc1;
+    color: #fff;
+}
+
+.letras{
+    background-color: #01184e;
+    padding: 4px 20px 10px;
+    width: 100%;
+}
+
+.letrasp{
+    background-color: #2e417e;
+    padding: 4px 20px 4px;
+    width: 100%;
+}
+
+/* FOOTER */
+
+footer{
+    background-image: linear-gradient(180deg, #f6f4f3, #f6f4f3, #988dc1, #3b429f, #01184e);
+    padding: 20px 0;
+    margin: 20px 0;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    font-size: medium;
+    margin-top: 1cm;
+    margin-bottom: -1cm;
+}
+
+footer p{
+    color:#fff;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    td,
+    td input {
+        width: 30px;
+        height: 30px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 5px;
+    }
+
+    td,
+    td input {
+        width: 25px;
+        height: 25px;
+        font-size: 12px;
+    }
+}
+
+/* BOTÕES INCLUSIVOS */
+
+.fixed-top-right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000; 
+    flex-direction: column; 
+    gap: 0px; 
+    margin-top: 4cm;
+}
+
+.spacer {
+    width: 100px; 
+    height: 100px !important; 
+}
+
+.btn-light{
+    background-color: #2e417e !important;
+    margin: 10px;
+ }
+
+ .btn-light:hover{
+    background-color:#988dc1 !important;
+ }

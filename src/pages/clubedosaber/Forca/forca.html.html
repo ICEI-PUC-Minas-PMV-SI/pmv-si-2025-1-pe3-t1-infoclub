@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="css.forca.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+   
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+  
+  
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../../../../index.html"><img src="../../../assets/icons/logo.png" height="140px" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar">
+          <img src="../../../assets/icons/menu-hamburguer_2.png" height="50px" alt="">
+  
+      </div>
+      <div class="offcanvas offcanvas-end text-bg-light" tabindex="-1" id="offcanvasDarkNavbar"
+    aria-labelledby="offcanvasDarkNavbarLabel">
+    <div class="offcanvas-header">
+      <h5 class="titulodocanva" id="acesso">• Acesso Rápido <img src="../../assets/icons/procurar.png" height="40px"
+          alt=""></h5>
+      <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../../glossario/glossario.html"><span> •
+            Glossário</span></a>
+        <p></p>
+        <p><a href="../../glossario/glossario.html">Estou procurando uma palavra que li.</a></p>
+      </li>
+      <li class="card-info">
+
+        <a class="nav-link active" aria-current="page" href="../../introduc/introtec.html"><span>• Introdução
+            tecnológica</span></a>
+        <p></p>
+        <p><a href="../../introduc/introtec.html">Como funciona um computador?</a></p>
+        <p><a href="../../introduc/introtec.html">O que é a Internet?</a></p>
+        <p><a href="../../introduc/introtec.html">Procuro dicas para melhor uso do meu aparelho</a></p>
+        <p></p>
+
+        <a class="nav-link active" aria-current="page" href="../../identgolpe/identgolpe/identgolpe.html"><span>• Como
+            identificar um
+            Golpe?</span></a>
+        <p></p>
+        <p> <a href="../../identgolpe/identgolpe/identgolpe.html">Estou com dúvidas quanto a golpes.</a></p>
+        <p> <a href="../../identgolpe/gopix/gopix.html">O que é golpe do Pix?</a></p>
+        <p> <a href="../../identgolpe/identgolpe/identgolpe.html">Como me previnir de golpes online?</a></p>
+        <p><a href="../../identgolpe/identgolpe/identgolpe.html">Como posso saber se cai em um golpe online?</a></p>
+        <p></p>
+        <a class="nav-link active" aria-current="page" href="../../realoufalso/realoufalso/realoufalso.html"><span>• Real
+            ou Falso?</span></a>
+        <p></p>
+        <p><a href="../../realoufalso/realoufalso/realoufalso.html">Estou com dúvidas após ler uma notícia</a></p>
+        <p><a href="../../realoufalso/realoufalso/realoufalso.html">Onde posso encontrar informações confiáveis?</a></p>
+        <p></p>
+        <a class="nav-link active" aria-current="page" href="../../leisdigitais/leisdigitais.html"><span>• Leis
+            Digitais</span></a>
+        <p></p>
+        <p><a href="../../leisdigitais/leisdigitais.html">Quais são as leis Digitais?</a></p>
+        <p></p>
+        <a class="nav-link active" aria-current="page" href="../../clubedosaber/clubedosaber.html"><span>• CLUBE DO
+            SABER</span></a>
+        <p></p>
+        <p><a href="../../clubedosaber/Forca/forca.html.html">Forca.</a></p>
+        <p><a href="../../clubedosaber/palavrascruzadas/palavrascruzadas.html">Palavras cruzadas.</a></p>
+        <p><a href="../../clubedosaber/passeiotecnologico/passeiotec/passeiotecnologico.html">Passeio tecnológico.</a>
+        </p>
+        <p></p>
+
+        <a class="nav-link active" aria-current="page" href="../../ajuda/ajuda.html"><span>• AJUDA</span></a>
+        <p></p>
+        <p><a href="../../ajuda/ajuda.html">Preciso de ajuda.</a> </p>
+        <p><a href="../../ajuda/ajuda.html">Quero entrar em contato.</a> </p>
+        <p></p>
+        <a class="nav-link active" aria-current="page" href="../../depoimentos/depoimentos.html"><span>•
+            DEPOIMENTOS</span></a>
+        <p></p>
+        <p><a href="../../depoimentos/depoimentos.html">Quero compartilhar um relato.</a> </p>
+  
+            </li>
+  
+        </div>
+        </li>
+        </ul>
+      </div>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+        </div>
+        <div id="carouselExample" class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../../../assets/img/forca40.jpg" class="d-block w-100" alt="...">
+          </div>
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+  
+      <p1>
+        <p><br></p>
+        <div class="texto">
+          <h1>Jogo da Forca.</h1>
+          <br>
+          <div class="destaque"> Neste jogo o jogador tem que acertar qual é a palavra proposta a um golpe, tendo como dica o número de letras e o tema ligado à palavra, a cada letra errada ficará na cor rosa e a cada letra correta ficará verde, é desenhado uma parte do corpo de um enforcado.
+          </div>
+          <p>
+            <div class="game-container">  
+              <h1></h1>
+              <p><br></p>
+              <img id="hangman-image" src="../../../assets/component/hangman0.png" alt="Hangman" >
+              <p class="hint"></p>
+              <div class="word-container"></div>
+              <div class="input-container">
+                  <input type="text" id="letter-input" maxlength="1" placeholder="Digite uma letra">
+                  <button id="submit-letter">Enviar</button>
+              </div>
+              <div class="incorrect-letters">
+                  <p>Letras incorretas: <span id="wrong-letters" style="color: aliceblue;"></span></p> 
+              </div>
+              <div id="popup" class="popup">
+                  <div class="popup-content">
+                      <span class="close">&times;</span>
+                      <p id="popup-message"></p>
+                      <button id="restart">Recomeçar</button>
+                  </div>
+              </div>
+          </div>
+          <script src="forca.js"></script>
+        </div>
+      
+          
+        
+      <p><h1></h1></p>
+      
+  </body>
+
+
+    <script src="js/forca.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+    
+
+
+
+
+
+    <p1>
+      <p><br></p>
+      <div class="texto">
+        <h1> Parabéns pela vitória na forca! 🏆</h1>
+        <br>
+        <div class="destaque"><p> Você demonstrou uma incrível habilidade em decifrar palavras e enfrentar desafios. Sua determinação e astúcia foram fundamentais para alcançar esse triunfo. <br>
+          Cada letra que você escolheu foi um passo em direção à vitória, cada palavra revelada uma prova do seu talento. Sua persistência e dedicação durante o jogo mostraram sua verdadeira habilidade.
+        </div>
+          <br>
+        </p>
+      </div>
+
+
+
+      <nav>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-1">
+              <div class="fixed-top-right p-3 d-flex flex-column">
+                <button type="button" class="btn btn-light mb-2">
+                  <i class="bi bi-zoom-in"><img src="../../../assets/icons/maiszoom.png" alt=""></i>
+                </button>
+                <button type="button" class="btn btn-light mb-2">
+                  <i class="bi bi-zoom-out"><img src="../../../assets/icons/menoszoom.png" alt=""></i>
+                </button>
+                <button type="button" class="btn btn-light mb-2">
+                  <i class="bi bi-volume-up"> <img src="../../../assets/icons/volumealto.png" alt=""></i>
+                </button>
+                <a href="../../clubedosaber/palavrascruzadas/palavrascruzadas.html">
+                <button type="button" class="btn btn-light mb-2">
+                  <i class=""> <img src="../../../assets/icons/avanco.png" height="48px" alt=""></i>
+                </button>
+              </a>
+              <a href="../../clubedosaber/clubedosaber.html">
+                  <button type="button" class="btn btn-light mb-2">
+                    <i class=""> <img src="../../../assets/icons/pagvolta.png" height="48px" alt=""></i>
+                  </button>
+                </a>
+                <a href="../../../../index.html">
+                    <button type="button" class="btn btn-light mb-2">
+                    <i class=""> <img src="../../../assets/icons/volte.png" height="48px" alt=""></i>
+                  </button>
+                </a>
+                    <button type="button" class="btn btn-light mb-2">
+                      <a href="#top" class="sm"><i class=""> <img src="../../../assets/icons/seta-para-cima.png" height="53px" alt=""></i></a>
+                  </button>
+              </div>
+            </nav>
+        
+        <div class="row">
+          <div class="col-12 spacer"></div>
+        </div>
+      </div>
+      <footer>
+        <div class="rodape">
+          <img src="../../../assets/icons/logo.png" alt="Infoclube" height="65">
+          <p><b> © Todos os direitos reservados.</b></p>
+          <p> Apoio </p>
+          <img src="../../../assets/icons/logopuc.png" alt="Puc Minas" height="35">
+        </div>
+      </footer>
+      <script>
+        var zoomableElements = document.querySelectorAll('p, .destaque, h1');
+    
+        function zoomIn() {
+            zoomableElements.forEach(function(element) {
+                element.style.fontSize = '1.7em'; 
+            });
+        }
+        
+        function zoomOut() {
+            zoomableElements.forEach(function(element) {
+                element.style.fontSize = '1.3em';
+            });
+        }
+    
+        
+        document.querySelector('.bi.bi-zoom-in').addEventListener('click', zoomIn);
+    
+        
+        document.querySelector('.bi.bi-zoom-out').addEventListener('click', zoomOut);
+    </script>
+  
+
+
+</body>
+</html>
+
