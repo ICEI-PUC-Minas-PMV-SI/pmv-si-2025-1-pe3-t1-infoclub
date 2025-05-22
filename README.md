@@ -44,5 +44,5 @@ Uma ferramenta educativa para capacitar idosos e grupos vulneráveis a navegar c
 
 # Link da aplicação 
 
-<li><a href="https://icei-puc-minas-pmv-si.github.io/pmv-si-2024-1-pe1-t2-desinformacaodigital/"> InfoClube</a></li>
+<li><a href="https://icei-puc-minas-pmv-si.github.io/pmv-si-2025-1-pe3-t1-infoclub/"> InfoClube</a></li>
 
