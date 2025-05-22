@@ -1,0 +1,28 @@
+cff-version: 1.0.1
+message: Please cite this software using these metadata.
+title: InfoClube
+authors:
+  - family-names: Lage Perez
+    given-names: Amanda  
+  - family-names: Vitor Machado Moura Filho
+    given-names: Daniel
+  - family-names: Alves Targino
+    given-names: Ester
+  - family-names:  de Freitas Souza Silva
+    given-names: Jennifer Suelen
+  - family-names: da Silva Rocha
+    given-names: João Eduardo
+  - family-names: Oliveira Cavalcante Duarte
+    given-names: Luís Henrique
+  - name-suffix: Professora 
+    affiliation: PUC Minas
+    family-names: de Nardin
+    given-names: Luciana
+keywords: 
+  - Terceira idade
+  - Tecnologia
+  - Inclusão 
+repository-code: https://icei-puc-minas-pmv-si.github.io/pmv-si-2024-1-pe1-t2-desinformacaodigital/
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2024-06-2024
