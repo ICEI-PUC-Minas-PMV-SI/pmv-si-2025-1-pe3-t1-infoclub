@@ -1,8 +1,7 @@
-// FORM
-
-function render(data, index){
+// Função para renderizar cada depoimento na tela
+function render(data){
   var html = `
-    <div class='comentBox' data-index="${index}">
+    <div class='comentBox' data-id="${data._id}">
       <div class='leftPanelImg'>
         <img src='../../assets/icons/usuario-de-perfil.png'>
       </div>
@@ -17,63 +16,86 @@ function render(data, index){
   $('#containercomment').append(html);
 }
 
+// Função para carregar todos depoimentos do backend
+async function carregarDepoimentos(){
+  try {
+    const response = await fetch('http://localhost:5001/api/depoimentos');
+    if (!response.ok) throw new Error('Erro ao buscar depoimentos');
+    const depoimentos = await response.json();
+
+    $('#containercomment').empty();
+    depoimentos.forEach(render);
+  } catch (error) {
+    alert(error.message);
+  }
+}
+
 $(document).ready(function(){
-  var coment = [];
 
-  if(localStorage.comentData){
-    coment = JSON.parse(localStorage.comentData);
-  }
+  // Carrega depoimentos ao abrir a página
+  carregarDepoimentos();
 
-  
-  for (var i = 0; i < coment.length; i++){
-    render(coment[i], i);
-  }
-
-
-  $('#addComent').click(function(e){
+  // Evento para adicionar depoimento
+  $('#addComent').click(async function(e){
     e.preventDefault();
 
-    if ($('#bodyText').val().trim() !== '') {
-      if (($('#name').val().trim() !== '') || ($('#agreeTerms').prop('checked'))) {
-        var name = $('#agreeTerms').prop('checked') ? "Anônimo" : $('#name').val();
-        var addObj = {
-          "name": name,
-          "body": $('#bodyText').val()
-        };
+    const bodyText = $('#bodyText').val().trim();
+    const nomeInput = $('#name').val().trim();
+    const anonimo = $('#agreeTerms').prop('checked');
 
-        coment.push(addObj);
-        localStorage.comentData = JSON.stringify(coment);
-        $('#containercomment').empty(); 
-        for (var i = 0; i < coment.length; i++){
-          render(coment[i], i);
-        }
-
-        $('#name').val('');
-        $('#bodyText').val('');
-        $('#agreeTerms').prop('checked', false);
-        openP();
-      } else {
-        alert('Por favor, escolha entre fornecer o seu nome ou selecionar Anônimo.');
-      }
-    } else {
+    if(bodyText === '') {
       alert('Por favor, insira um depoimento antes de enviar.');
+      return;
+    }
+
+    if(nomeInput === '' && !anonimo){
+      alert('Por favor, escolha entre fornecer o seu nome ou selecionar Anônimo.');
+      return;
+    }
+
+    const name = anonimo ? "Anônimo" : nomeInput;
+
+    try {
+      const response = await fetch('http://localhost:5001/api/depoimentos', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, body: bodyText })
+      });
+
+      if(!response.ok) throw new Error('Erro ao salvar depoimento');
+
+      await carregarDepoimentos();
+
+      // Limpa os campos do formulário
+      $('#name').val('');
+      $('#bodyText').val('');
+      $('#agreeTerms').prop('checked', false);
+
+      openP();
+    } catch (error) {
+      alert(error.message);
     }
   });
 
-  
-  $('#containercomment').on('click', '.deleteBtn', function(){
-    var index = $(this).closest('.comentBox').data('index');
-    coment.splice(index, 1);
-    localStorage.comentData = JSON.stringify(coment);
-    $('#containercomment').empty();
-    for (var i = 0; i < coment.length; i++){
-      render(coment[i], i);
+  // Evento para deletar depoimento
+  $('#containercomment').on('click', '.deleteBtn', async function(){
+    const id = $(this).closest('.comentBox').data('id');
+
+    try {
+      const response = await fetch(`http://localhost:5001/api/depoimentos/${id}`, {
+        method: 'DELETE'
+      });
+
+      if(!response.ok) throw new Error('Erro ao excluir depoimento');
+
+      await carregarDepoimentos();
+    } catch (error) {
+      alert(error.message);
     }
   });
 });
 
-// POPUP
-
+// Popup (sem alterações)
 const popupdep = document.querySelector('#pop');
 const overlay = document.querySelector('.overlay');
 
