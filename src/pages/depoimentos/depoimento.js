@@ -1,23 +1,35 @@
 // FORM
-function render(data){
-  var html = "<div class='comentBox'><div class='leftPanelImg'><img src='../../assets/icons/usuario-de-perfil.png'></div><h1>"+data.name+"</h1><p>"+data.body+"</p></div><div class='clear'></div></div>"
+
+function render(data, index){
+  var html = `
+    <div class='comentBox' data-index="${index}">
+      <div class='leftPanelImg'>
+        <img src='../../assets/icons/usuario-de-perfil.png'>
+      </div>
+      <div class='rightPanel'>
+        <h1>${data.name}</h1>
+        <p>${data.body}</p>
+        <button class="btn btn-danger btn-sm deleteBtn">Excluir</button>
+      </div>
+      <div class='clear'></div>
+    </div>
+  `;
   $('#containercomment').append(html);
 }
-$(document).ready(function(){
 
+$(document).ready(function(){
   var coment = [];
 
-  if(!localStorage.comentData){
-    localStorage.comentData = [];
-  }
-  else{
+  if(localStorage.comentData){
     coment = JSON.parse(localStorage.comentData);
   }
+
   
   for (var i = 0; i < coment.length; i++){
-    render(coment[i]);
+    render(coment[i], i);
   }
-  
+
+
   $('#addComent').click(function(e){
     e.preventDefault();
 
@@ -25,27 +37,40 @@ $(document).ready(function(){
       if (($('#name').val().trim() !== '') || ($('#agreeTerms').prop('checked'))) {
         var name = $('#agreeTerms').prop('checked') ? "Anônimo" : $('#name').val();
         var addObj = {
-            "name": name,
-            "body": $('#bodyText').val()
+          "name": name,
+          "body": $('#bodyText').val()
         };
 
         coment.push(addObj);
         localStorage.comentData = JSON.stringify(coment);
-        render(addObj);
+        $('#containercomment').empty(); 
+        for (var i = 0; i < coment.length; i++){
+          render(coment[i], i);
+        }
+
         $('#name').val('');
         $('#bodyText').val('');
         $('#agreeTerms').prop('checked', false);
-        
-        openP(); 
+        openP();
       } else {
-        alert('Por favor, escolha entre fornecer o seu nome ou selecionar Anônimo.'); // Exibe uma mensagem de alerta
+        alert('Por favor, escolha entre fornecer o seu nome ou selecionar Anônimo.');
       }
     } else {
-        alert('Por favor, insira um depoimento antes de enviar.'); // Exibe uma mensagem de alerta
+      alert('Por favor, insira um depoimento antes de enviar.');
+    }
+  });
+
+  
+  $('#containercomment').on('click', '.deleteBtn', function(){
+    var index = $(this).closest('.comentBox').data('index');
+    coment.splice(index, 1);
+    localStorage.comentData = JSON.stringify(coment);
+    $('#containercomment').empty();
+    for (var i = 0; i < coment.length; i++){
+      render(coment[i], i);
     }
   });
 });
-
 
 // POPUP
 

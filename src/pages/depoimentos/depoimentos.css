@@ -115,7 +115,8 @@ p a:hover{
   border-radius: 10px;
   margin-bottom: 15px;
   min-height: 130px;
-  max-width: 900px; 
+  overflow: hidden;
+  width: 800px; 
   overflow:-moz-hidden-unscrollable;
 }
 
@@ -135,6 +136,12 @@ p a:hover{
 .rightPanel{
   width: 85%;
   height: 60px;
+  height: auto;
+}
+
+.rightPanel p {
+  margin-top: 10px;
+  word-wrap: break-word;
 }
 
 .clear{ 
@@ -432,6 +439,22 @@ body, html {
  .btn-light:hover{
     background-color:#988dc1 !important;
  }
+
+.deleteBtn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+  float: right;
+  margin-right: -110px;
+  margin-bottom: 2px;
+}
+
+.deleteBtn:hover {
+  background-color: #c82333;
+}
 
  /* FOOTER */
 
