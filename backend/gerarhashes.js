@@ -5,7 +5,7 @@ const admins = [
   { nome: "Amanda", email: "amanda@admninfoclube.com", senha: "amanda123" },
   { nome: "Luis", email: "luis@admninfoclube.com", senha: "luis123" },
   { nome: "João", email: "joao@admninfoclube.com", senha: "joao123" },
-  { nome: "Daniel", email: "jennifer@admninfoclube.com", senha: "jennifer123" },
+  { nome: "Jennifer", email: "jennifer@admninfoclube.com", senha: "jennifer123" },
   { nome: "Ester", email: "ester@admninfoclube.com", senha: "ester123" },
 ];
 
