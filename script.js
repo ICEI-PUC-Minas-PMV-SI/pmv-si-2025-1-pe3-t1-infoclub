@@ -58,9 +58,15 @@ async function fazerLogin() {
     const usuario = resultado.usuario;
     localStorage.setItem("logado", "true");
     localStorage.setItem("usuarioLogado", JSON.stringify(usuario));
-    alert(`Bem-vindo(a), ${usuario.nome}!`);
-    fecharModal();
-    atualizarInterface();
+
+    if (usuario.tipo === "admin") {
+      alert(`Bem-vindo(a), ADMIN ${usuario.nome}!`);
+      window.location.href = "admin.html"; // Página exclusiva para administradores
+    } else {
+      alert(`Bem-vindo(a), ${usuario.nome}!`);
+      fecharModal();
+      atualizarInterface();
+    }
 
   } catch (erro) {
     console.error("Erro no login:", erro);
@@ -177,3 +183,18 @@ window.onclick = function(event) {
   });
 };
 
+function verificarAdmin(req, res, next) {
+  const token = req.headers.authorization?.split(" ")[1];
+
+  if (!token) return res.status(401).json({ msg: "Token não fornecido" });
+
+  try {
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    if (decoded.tipo !== "admin") {
+      return res.status(403).json({ msg: "Acesso negado" });
+    }
+    next();
+  } catch (err) {
+    res.status(401).json({ msg: "Token inválido" });
+  }
+}
