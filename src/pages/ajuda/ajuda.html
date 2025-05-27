@@ -161,72 +161,72 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
 
 <div class="container">
-  <div class="formulario">
-      <div class="row">
-          <div class="col-lg-12 text-left">
-              <h2>Precisa de ajuda?</h2>
-              <form id="helpForm">
-                  <label for="nome">Nome Completo:</label>
-                  <input type="text" id="nome" name="nome" oninput="validateName()" required><br>
-                  <span class="error-message" id="nome-error"></span>
-
-                  <label for="telefone">Telefone:</label>
-                  <input type="tel" id="telefone" name="telefone" maxlength="11" placeholder="(00) 00000-0000" pattern="\d*" required><br>
-                  <span class="error-message" id="telefone-error"></span>
-
-                  <label for="email">E-mail:</label>
-                  <input type="email" id="email" name="email" required><br>
-                  <span class="error-message" id="email-error"></span>
-
-                  <label for="estado">Estado:</label>
-                  <input type="text" id="estado" name="estado" oninput="validateEstado()" required><br>
-                  <span class="error-message" id="estado-error"></span>
-
-                  <label for="idade">Idade:</label>
-                  <input type="number" id="idade" name="idade" min="0" max="120" required><br>
-                  <span class="error-message" id="idade-error"></span>
-
-                  <label for="duvida">Descreva sua dúvida:</label><br>
-                  <textarea id="duvida" name="duvida" rows="6" cols="100" required></textarea><br>
-                  <span class="error-message" id="duvida-error"></span>
-
-                  <script>
-                    $(document).ready(function(){
-                      $('telefone').mask('(00) 00000-0000');
-                    });
-                  </script>
-
-                 <script>
-                    document.getElementById('idade').addEventListener('input', function (e) {
-                      if (e.target.value.length > 2) {
-                        e.target.value = e.target.value.slice(0, 2);
-                      }
-                    });
-                  </script>
-                  
-                    <script>
-                    function validateName() {
-                      var input = document.getElementById('nome');
-                      input.value = input.value.replace(/[^a-zA-Z\s]/g, '');
-                    }
-                  </script>
-
-                  <script>
-                  function validateEstado() {
-                   var input = document.getElementById('estado');
-                   input.value = input.value.replace(/[^a-zA-Z\s]/g, '');
-  }
-</script>
-
-
-
-                  <button onclick="mostrarDepoimento()" type="submit">Enviar</button>
-              </form>
+          <div class="formulario">
+              <div class="row">
+                  <div class="col-lg-12 text-left">
+                      <h2>Precisa de ajuda?</h2>
+                      <form action="https://formspree.io/f/myzwoppb" method="POST">
+                        <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+                          <label for="nome">Nome Completo:</label>
+                          <input type="text" id="nome" name="nome" oninput="validateName()" required><br>
+                          <span class="error-message" id="nome-error"></span>
+        
+                          <label for="telefone">Telefone:</label>
+                          <input type="tel" id="telefone" name="telefone" maxlength="11" placeholder="(00) 00000-0000" pattern="\d*" required><br>
+                          <span class="error-message" id="telefone-error"></span>
+        
+                          <label for="email">E-mail:</label>
+                          <input type="email" id="email" name="email" required><br>
+                          <span class="error-message" id="email-error"></span>
+        
+                          <label for="estado">Estado:</label>
+                          <input type="text" id="estado" name="estado" oninput="validateEstado()" required><br>
+                          <span class="error-message" id="estado-error"></span>
+        
+                          <label for="idade">Idade:</label>
+                          <input type="number" id="idade" name="idade" min="0" max="120" required><br>
+                          <span class="error-message" id="idade-error"></span>
+        
+                          <label for="duvida">Descreva sua dúvida:</label><br>
+                          <textarea id="duvida" name="duvida" rows="6" cols="100" required></textarea><br>
+                          <span class="error-message" id="duvida-error"></span>
+        
+                          <script>
+                            $(document).ready(function(){
+                              $('telefone').mask('(00) 00000-0000');
+                            });
+                          </script>
+        
+                         <script>
+                            document.getElementById('idade').addEventListener('input', function (e) {
+                              if (e.target.value.length > 2) {
+                                e.target.value = e.target.value.slice(0, 2);
+                              }
+                            });
+                          </script>
+        
+                            <script>
+                            function validateName() {
+                              var input = document.getElementById('nome');
+                              input.value = input.value.replace(/[^a-zA-Z\s]/g, '');
+                            }
+                          </script>
+        
+                          <script>
+                          function validateEstado() {
+                           var input = document.getElementById('estado');
+                           input.value = input.value.replace(/[^a-zA-Z\s]/g, '');
+          }
+        </script>
+        
+        
+        
+                          <button onclick="mostrarDepoimento()" type="submit">Enviar</button>
+                      </form>
+                  </div>
+              </div>
           </div>
-      </div>
-  </div>
-</div>
-
+        </div>
 <style>
   .error-message {
       color: red;
