@@ -481,3 +481,9 @@ body, html {
   margin: 10px 0;
   color: #fff;
 }
+
+button.editar, button.excluir {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+

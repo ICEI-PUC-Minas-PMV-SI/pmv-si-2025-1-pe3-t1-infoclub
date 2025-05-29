@@ -83,67 +83,68 @@ $(document).ready(async function () {
 //  whatever
 document.getElementById("testForm").addEventListener("submit", function(e) {
     e.preventDefault();
+    
+    const nome = document.getElementById("name").value;
+    const texto = document.getElementById("bodyText").value;
+    const anonimo = document.getElementById("agreeTerms").checked;
 
-    const name = document.getElementById("name").value.trim();
-    const isAnonymous = document.getElementById("agreeTerms").checked;
-    const body = document.getElementById("bodyText").value.trim();
+    const nomeFinal = anonimo || nome.trim() === "" ? "Anônimo" : nome;
 
-    if (body === "") return;
+    // Criar elementos
+    const comentario = document.createElement("div");
+    comentario.classList.add("comentBox");
 
-    const container = document.getElementById("containercomment");
+    const imgDiv = document.createElement("div");
+    imgDiv.classList.add("leftPanelImg");
+    const img = document.createElement("img");
+    img.src = "../../assets/icons/usuario-de-perfil.png";
+    imgDiv.appendChild(img);
 
-    const commentBox = document.createElement("div");
-    commentBox.className = "comentBox";
-
-    const leftPanel = document.createElement("div");
-    leftPanel.className = "leftPanelImg";
-    leftPanel.innerHTML = `<img src='../../assets/icons/usuario-de-perfil.png'>`;
-
-    const rightPanel = document.createElement("div");
-    rightPanel.className = "rightPanel";
-
-    const commenterName = isAnonymous ? "Anônimo" : name || "Usuário";
-    rightPanel.innerHTML = `
-        <h1>${commenterName}</h1>
-        <p class="commentText">${body}</p>
-        <button class="btn btn-light btn-sm editBtn">Editar</button>
-        <button class="btn btn-danger btn-sm deleteBtn">Excluir</button>
+    const textoDiv = document.createElement("div");
+    textoDiv.classList.add("rightPanel");
+    textoDiv.innerHTML = `
+        <h1>${nomeFinal}</h1>
+        <p>${texto}</p>
+        <button class="btn btn-sm btn-warning editar">Editar</button>
+        <button class="btn btn-sm btn-danger excluir">Excluir</button>
     `;
 
-    commentBox.appendChild(leftPanel);
-    commentBox.appendChild(rightPanel);
-    container.appendChild(commentBox);
+    comentario.appendChild(imgDiv);
+    comentario.appendChild(textoDiv);
+    document.getElementById("containercomment").appendChild(comentario);
 
-    // Limpar campos
+    // Eventos dos botões
+    textoDiv.querySelector(".excluir").addEventListener("click", () => {
+        comentario.remove();
+    });
+
+    textoDiv.querySelector(".editar").addEventListener("click", () => {
+        const novoTexto = prompt("Edite seu depoimento:", textoDiv.querySelector("p").innerText);
+        if (novoTexto !== null && novoTexto.trim() !== "") {
+            textoDiv.querySelector("p").innerText = novoTexto;
+        }
+    });
+
+    // Limpa o formulário e mostra o popup
     document.getElementById("testForm").reset();
-
-    // Mostrar popup
-    openP();
-
-    // Editar
-    rightPanel.querySelector(".editBtn").addEventListener("click", function () {
-        const currentText = rightPanel.querySelector(".commentText").textContent;
-        const newText = prompt("Edite seu depoimento:", currentText);
-        if (newText !== null && newText.trim() !== "") {
-            rightPanel.querySelector(".commentText").textContent = newText;
-        }
-    });
-
-    // Excluir
-    rightPanel.querySelector(".deleteBtn").addEventListener("click", function () {
-        if (confirm("Tem certeza que deseja excluir este depoimento?")) {
-            container.removeChild(commentBox);
-        }
-    });
-});
-
-// Funções do popup
-function openP() {
     document.getElementById("pop").classList.add("open");
     document.querySelector(".overlay").classList.add("open");
+});
+
+// POPUP
+
+const popupdep = document.querySelector("#pop");
+const overlay = document.querySelector(".overlay");
+
+function openP() {
+  popupdep.classList.add("open");
+  overlay.classList.add("open");
+  overlay.style.display = "block";
 }
 
 function closeP() {
-    document.getElementById("pop").classList.remove("open");
-    document.querySelector(".overlay").classList.remove("open");
+  popupdep.classList.remove("open");
+  overlay.classList.remove("open");
+  overlay.style.display = "none";
 }
+
