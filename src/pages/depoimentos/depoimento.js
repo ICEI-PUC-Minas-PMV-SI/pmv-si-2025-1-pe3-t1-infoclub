@@ -80,7 +80,7 @@ $(document).ready(async function () {
   });
 });
 
-
+//  whatever
 document.getElementById("testForm").addEventListener("submit", function(e) {
     e.preventDefault();
 
@@ -137,20 +137,13 @@ document.getElementById("testForm").addEventListener("submit", function(e) {
     });
 });
 
-
-// POPUP
-
-const popupdep = document.querySelector("#pop");
-const overlay = document.querySelector(".overlay");
-
+// Funções do popup
 function openP() {
-  popupdep.classList.add("open");
-  overlay.classList.add("open");
-  overlay.style.display = "block";
+    document.getElementById("pop").classList.add("open");
+    document.querySelector(".overlay").classList.add("open");
 }
 
 function closeP() {
-  popupdep.classList.remove("open");
-  overlay.classList.remove("open");
-  overlay.style.display = "none";
+    document.getElementById("pop").classList.remove("open");
+    document.querySelector(".overlay").classList.remove("open");
 }
