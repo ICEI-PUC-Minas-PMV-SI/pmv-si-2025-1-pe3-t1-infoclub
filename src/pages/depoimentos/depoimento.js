@@ -80,6 +80,64 @@ $(document).ready(async function () {
   });
 });
 
+
+document.getElementById("testForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const isAnonymous = document.getElementById("agreeTerms").checked;
+    const body = document.getElementById("bodyText").value.trim();
+
+    if (body === "") return;
+
+    const container = document.getElementById("containercomment");
+
+    const commentBox = document.createElement("div");
+    commentBox.className = "comentBox";
+
+    const leftPanel = document.createElement("div");
+    leftPanel.className = "leftPanelImg";
+    leftPanel.innerHTML = `<img src='../../assets/icons/usuario-de-perfil.png'>`;
+
+    const rightPanel = document.createElement("div");
+    rightPanel.className = "rightPanel";
+
+    const commenterName = isAnonymous ? "Anônimo" : name || "Usuário";
+    rightPanel.innerHTML = `
+        <h1>${commenterName}</h1>
+        <p class="commentText">${body}</p>
+        <button class="btn btn-light btn-sm editBtn">Editar</button>
+        <button class="btn btn-danger btn-sm deleteBtn">Excluir</button>
+    `;
+
+    commentBox.appendChild(leftPanel);
+    commentBox.appendChild(rightPanel);
+    container.appendChild(commentBox);
+
+    // Limpar campos
+    document.getElementById("testForm").reset();
+
+    // Mostrar popup
+    openP();
+
+    // Editar
+    rightPanel.querySelector(".editBtn").addEventListener("click", function () {
+        const currentText = rightPanel.querySelector(".commentText").textContent;
+        const newText = prompt("Edite seu depoimento:", currentText);
+        if (newText !== null && newText.trim() !== "") {
+            rightPanel.querySelector(".commentText").textContent = newText;
+        }
+    });
+
+    // Excluir
+    rightPanel.querySelector(".deleteBtn").addEventListener("click", function () {
+        if (confirm("Tem certeza que deseja excluir este depoimento?")) {
+            container.removeChild(commentBox);
+        }
+    });
+});
+
+
 // POPUP
 
 const popupdep = document.querySelector("#pop");
