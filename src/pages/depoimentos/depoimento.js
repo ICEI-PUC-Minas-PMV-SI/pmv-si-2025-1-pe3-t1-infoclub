@@ -1,134 +1,139 @@
-// FORM
-function render(data) {
-  console.log(data);
-  var html =
-    "<div class='comentBox'><div class='leftPanelImg'><img src='../../assets/icons/usuario-de-perfil.png'></div><h1>" +
-    data.nome +
-    "</h1><p>" +
-    data.comentario +
-    "</p></div><div class='clear'></div></div>";
-  $("#containercomment").append(html);
-}
 
-function fecharModal() {
-  var modalLogin = bootstrap.Modal.getInstance($("#modalLogin"));
-  modalLogin.hide();
-}
+let usuario = null;
+
+function render(data) {
+  const html = `
+    <div class='comentBox' data-id='${data._id}' data-email='${data.email}'> 
+      <div class='leftPanelImg'>
+        <img src='../../assets/icons/usuario-de-perfil.png'>
+      </div>
+      <div class='rightPanel'>
+        <h1>${data.nome}</h1>
+        <p>${data.comentario}</p>
+        ${
+          usuario && usuario.email === data.email
+            ? `<button class="btn btn-sm btn-warning editar">Editar</button>
+               <button class="btn btn-sm btn-danger excluir">Excluir</button>`
+            : ""
+        }
+      </div>
+      <div class='clear'></div>
+    </div>`;
+
+  $("#containercomment").append(html);
+      } // tudo  depois de data.cometario
+
 
 $(document).ready(async function () {
-  console.log(localStorage.usuarioLogado);
+
   if (localStorage.usuarioLogado) {
-    var usuario = JSON.parse(localStorage.usuarioLogado);
-    console.log(usuario.nome);
+    usuario = JSON.parse(localStorage.usuarioLogado);
     $("#name").val(usuario.nome);
   } else {
-   $("#formDepoimentos").hide()
-    var modalLogin = new bootstrap.Modal($("#modalLogin"));
+    $("#formDepoimentos").hide();
+    const modalLogin = new bootstrap.Modal($("#modalLogin"));
     modalLogin.show();
   }
-  var resultado = [];
-  console.log("buscando comentarios");
-  const response = await fetch(
-    "http://localhost:5001/api/comentario/obterComentarios",
-    {
-      method: "GET",
-    }
-  );
 
-  resultado = await response.json();
-  console.log(resultado);
-  for (var i = 0; i < resultado.length; i++) {
-    render(resultado[i]);
+  // Carrega os comentários existentes
+  try {
+    const response = await fetch("http://localhost:5001/api/comentario/obterComentarios", {
+      method: "GET",
+    });
+    const comentarios = await response.json();
+    comentarios.forEach(render);
+  } catch (error) {
+    console.error("Erro ao buscar comentários:", error);
   }
 
-  $("#addComent").click(async function (e) {
-    console.log("Click");
+  // Envia novo comentário
+  $("#testForm").on("submit", async function (e) {
     e.preventDefault();
 
-    if ($("#bodyText").val().trim() !== "") {
-      if ($("#name").val().trim() !== "" || $("#agreeTerms").prop("checked")) {
-        var nome = $("#agreeTerms").prop("checked")
-          ? "Anônimo"
-          : $("#name").val();
-        var email = usuario.email;
-        var comentario = $("#bodyText").val().trim();
+    const nomeInput = $("#name").val().trim();
+    const texto = $("#bodyText").val().trim();
+    const anonimo = $("#agreeTerms").is(":checked");
 
-        const response = await fetch(
-          "http://localhost:5001/api/comentario/incluirComentario",
-          {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ email, nome, comentario }),
-          }
-        );
+    if (!texto) {
+      alert("Por favor, insira um depoimento antes de enviar.");
+      return;
+    }
 
-        const resultado = await response.json();
-        render({ nome, comentario });
-        $("#name").val("");
-        $("#bodyText").val("");
-        $("#agreeTerms").prop("checked", false);
+    const nome = anonimo || nomeInput === "" ? "Anônimo" : nomeInput;
+    const email = usuario ? usuario.email : "";
 
-        openP();
-      } else {
-        alert(
-          "Por favor, escolha entre fornecer o seu nome ou selecionar Anônimo."
-        ); // Exibe uma mensagem de alerta
-      }
-    } else {
-      alert("Por favor, insira um depoimento antes de enviar."); // Exibe uma mensagem de alerta
+    try {
+      const response = await fetch("http://localhost:5001/api/comentario/incluirComentario", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, nome, comentario: texto }),
+      });
+
+      const result = await response.json();
+
+      // A API precisa retornar o _id do comentário salvo!
+      const novoComentario = { _id: result._id, nome, comentario: texto };
+      render(novoComentario);
+
+      $("#testForm")[0].reset();
+      openP();
+    } catch (error) {
+      console.error("Erro ao enviar comentário:", error);
     }
   });
-});
 
-//  whatever
-document.getElementById("testForm").addEventListener("submit", function(e) {
-    e.preventDefault();
-    
-    const nome = document.getElementById("name").value;
-    const texto = document.getElementById("bodyText").value;
-    const anonimo = document.getElementById("agreeTerms").checked;
 
-    const nomeFinal = anonimo || nome.trim() === "" ? "Anônimo" : nome;
+  // Excluir comentário
+  $(document).on("click", ".excluir", async function () {
+    const box = $(this).closest(".comentBox");
+    const id = box.data("id");
 
-    // Criar elementos
-    const comentario = document.createElement("div");
-    comentario.classList.add("comentBox");
+    if (!id) return;
 
-    const imgDiv = document.createElement("div");
-    imgDiv.classList.add("leftPanelImg");
-    const img = document.createElement("img");
-    img.src = "../../assets/icons/usuario-de-perfil.png";
-    imgDiv.appendChild(img);
+    if (confirm("Tem certeza que deseja excluir este comentário?")) {
+      try {
+        const response = await fetch(`http://localhost:5001/api/comentario/excluirComentario/${id}`, {
+          method: "DELETE",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email: usuario.email }),
+        });
 
-    const textoDiv = document.createElement("div");
-    textoDiv.classList.add("rightPanel");
-    textoDiv.innerHTML = `
-        <h1>${nomeFinal}</h1>
-        <p>${texto}</p>
-        <button class="btn btn-sm btn-warning editar">Editar</button>
-        <button class="btn btn-sm btn-danger excluir">Excluir</button>
-    `;
+        const result = await response.json();
+        console.log(result.msg);
+        box.remove();
+      } catch (error) {
+        console.error("Erro ao excluir comentário:", error);
+      }
+    }
+  });
 
-    comentario.appendChild(imgDiv);
-    comentario.appendChild(textoDiv);
-    document.getElementById("containercomment").appendChild(comentario);
+  // Editar comentário
+  $(document).on("click", ".editar", async function () {
+    const box = $(this).closest(".comentBox");
+    const id = box.data("id");
 
-    // Eventos dos botões
-    textoDiv.querySelector(".excluir").addEventListener("click", () => {
-        comentario.remove();
-    });
+    if (!id) return;
 
-    textoDiv.querySelector(".editar").addEventListener("click", () => {
-        const novoTexto = prompt("Edite seu depoimento:", textoDiv.querySelector("p").innerText);
-        if (novoTexto !== null && novoTexto.trim() !== "") {
-            textoDiv.querySelector("p").innerText = novoTexto;
-        }
-    });
+    const p = box.find("p");
+    const textoAtual = p.text();
+    const novoTexto = prompt("Edite seu depoimento:", textoAtual);
 
-    // Limpa o formulário e mostra o popup
-    document.getElementById("testForm").reset();
-    document.getElementById("pop").classList.add("open");
-    document.querySelector(".overlay").classList.add("open");
+    if (novoTexto && novoTexto.trim() !== "" && novoTexto !== textoAtual) {
+      try {
+        const response = await fetch(`http://localhost:5001/api/comentario/editarComentario/${id}`, {
+          method: "PUT",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ comentario: novoTexto, email: usuario.email }),
+        });
+
+        const result = await response.json();
+        console.log(result.msg);
+        p.text(novoTexto);
+      } catch (error) {
+        console.error("Erro ao editar comentário:", error);
+      }
+    }
+  });
 });
 
 // POPUP

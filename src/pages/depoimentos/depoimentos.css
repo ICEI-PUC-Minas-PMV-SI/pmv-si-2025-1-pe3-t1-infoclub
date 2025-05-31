@@ -485,5 +485,16 @@ body, html {
 button.editar, button.excluir {
   margin-right: 10px;
   margin-top: 10px;
+  background-color: #988dc1;
+  color:white;
+  border: white;
+}
+
+button.editar:hover, button.excluir:hover {
+  margin-right: 10px;
+  margin-top: 10px;
+  background-color: black;
+  color:white;
+  border: white;
 }
 
