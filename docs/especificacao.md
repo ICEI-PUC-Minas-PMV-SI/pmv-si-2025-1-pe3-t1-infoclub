@@ -46,7 +46,7 @@ O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcela
 | RF7 |	Controlar zoom da visualização| Controle do zoom da visualização do software a partir de uma ferramenta de lupa.|
 | RF8 |	Salvar para mais tarde	| O software deve permitir o salvamento de conteúdo para leitura posterior.  |
 | RF9 | Imprimir conteúdo| O software deve possuir botão de impressão para permitir que o usuário imprima as páginas em PDF ou em impressora local.|
-| RF10 |Enviar feedback ou Dúvida.|A aplicação deve permitir que os usuários enviem feedback ou dúvidas aos administradores e os visualizem em seus perfis.|
+| RF10 |Enviar feedback ou Dúvida.|A aplicação deve permitir que os usuários enviem feedback ou dúvidas aos administradores.|
 | RF11 | Entrar no sistema |A aplicação deve permitir que os usuários façam login.|
 | RF12 | Sair do sitema |A aplicação deve permitir que os usuários façam logout.|
 | RF13 | Recuperar senha |A aplicação deve permitir que os usuários recuperem suas credenciais de acesso.|
