@@ -39,19 +39,20 @@ O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcela
 |--------------------|------------------------------------|----------------------------------------|
 | RF1 | Gerenciar usuário | A aplicação deve permitir que os usuários criem usuário e senha para acessar o sistema, podendo editar ou excluir as informações de acesso. A criação do usuário é opcional |
 | RF2 | Gerenciar conteúdo estático |  Criação, consulta, exclusão e edição do conteúdo estático do software |
-| RF3 | Gerenciar conteúo interativo |  Criação, consulta, exclusão e edição do conteúdo interativo do software |
+| RF3 | Gerenciar conteúdo interativo |  Criação, consulta, exclusão e edição do conteúdo interativo do software |
 | RF4 | Moderar feedbacks e dúvidas |  Moderação dos feedbacks e dúvidas enviados aos Administradores |
-| RF5 |	Gerenciar comentários	|Incluir, excluir e editar comentários.  |
-| RF6 |	Listar conteúdo	|Ferramenta para listagem de interesses pré-definidos com base no público-alvo.  |
-| RF7 |	Controlar zoom da visualização| Controle do zoom da visualização do software a partir de uma ferramenta de lupa.|
-| RF8 |	Salvar para mais tarde	| O software deve permitir o salvamento de conteúdo para leitura posterior.  |
-| RF9 | Imprimir conteúdo| O software deve possuir botão de impressão para permitir que o usuário imprima as páginas em PDF ou em impressora local.|
-| RF10 |Enviar feedback ou Dúvida.|A aplicação deve permitir que os usuários enviem feedback ou dúvidas aos administradores.|
-| RF11 | Entrar no sistema |A aplicação deve permitir que os usuários façam login.|
-| RF12 | Sair do sitema |A aplicação deve permitir que os usuários façam logout.|
-| RF13 | Recuperar senha |A aplicação deve permitir que os usuários recuperem suas credenciais de acesso.|
-| RF14 | Moderar comentários |A aplicação deve permitir que os administradores incluam, excluam e editem comentários dos usuários.|
-| RF15 | Moderar usuários |A aplicação deve permitir que os administradores excluam e suspendam por tempo determinado os perfis de usuários.|
+| RF5 |	Visualizar comentários	| Permite que usuários e Administradores visualizem os comentários |
+| RF6 |	Gerenciar comentários	|Incluir, excluir e editar comentários.  |
+| RF7 |	Listar conteúdo	|Ferramenta para listagem de interesses pré-definidos com base no público-alvo.  |
+| RF8 |	Controlar zoom da visualização| Controle do zoom da visualização do software a partir de uma ferramenta de lupa.|
+| RF9 |	Salvar para mais tarde	| O software deve permitir o salvamento de conteúdo para leitura posterior.  |
+| RF10 | Imprimir conteúdo| O software deve possuir botão de impressão para permitir que o usuário imprima as páginas em PDF ou em impressora local.|
+| RF11 |Enviar feedback ou Dúvida.|A aplicação deve permitir que os usuários enviem feedback ou dúvidas aos administradores.|
+| RF12 | Entrar no sistema |A aplicação deve permitir que os usuários façam login.|
+| RF13 | Sair do sitema |A aplicação deve permitir que os usuários façam logout.|
+| RF14 | Recuperar senha |A aplicação deve permitir que os usuários recuperem suas credenciais de acesso.|
+| RF15 | Moderar comentários |A aplicação deve permitir que os administradores incluam, excluam e editem comentários dos usuários.|
+| RF16 | Moderar usuários |A aplicação deve permitir que os administradores excluam e suspendam por tempo determinado os perfis de usuários.|
 
 
 
