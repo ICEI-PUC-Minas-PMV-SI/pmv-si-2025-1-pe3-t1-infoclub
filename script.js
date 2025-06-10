@@ -59,14 +59,14 @@ async function fazerLogin() {
     localStorage.setItem("logado", "true");
     localStorage.setItem("usuarioLogado", JSON.stringify(usuario));
 
-    if (usuario.tipo === "admin") {
-      alert(`Bem-vindo(a), ADMIN ${usuario.nome}!`);
-      window.location.href = "admin.html"; // Página exclusiva para administradores
-    } else {
-      alert(`Bem-vindo(a), ${usuario.nome}!`);
-      fecharModal();
-      atualizarInterface();
-    }
+if (usuario.tipo === "admin") {
+  alert(`Bem-vindo(a), ADMIN ${usuario.nome}!`);
+  window.location.href = "admin.html"; // Página exclusiva para administradores
+} else {
+  alert(`Bem-vindo(a), ${usuario.nome}!`);
+  fecharModal();
+  location.reload(); // Aqui força o botão "Sair" a aparecer corretamente
+}
 
   } catch (erro) {
     console.error("Erro no login:", erro);
