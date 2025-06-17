@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", atualizarInterface);
 
 // Abrir/Fechar Modais
-function abrirLogin() {
+function fazerLogin() {
   document.getElementById("modalLogin").style.display = "flex";
   fecharOutros("modalLogin");
 }
